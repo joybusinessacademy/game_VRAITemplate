@@ -20,7 +20,7 @@
       "hash": "e2aa7c737e759baaf617e8d36665d7d1810db97c"
     },
     "com.meta.xr.sdk.voice": {
-      "version": "file:E:/Downloads/com.meta.xr.sdk.voice-65.0.0.tgz",
+      "version": "file:com.meta.xr.sdk.voice",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}
