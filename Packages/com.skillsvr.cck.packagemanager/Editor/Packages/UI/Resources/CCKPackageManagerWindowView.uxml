@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <SkillsVR.CCK.PackageManager.UI.Views.CCKPackageManagerTopBar name="top-bar" />
+    <ui:VisualElement name="line" style="flex-shrink: 0; flex-grow: 1; height: 1px; max-height: 1px; min-height: 1px; background-color: rgb(0, 0, 0);" />
+    <SkillsVR.CCK.PackageManager.UI.Views.CCKAssetExplorerView name="asset-explorer-view" />
+    <SkillsVR.CCK.PackageManager.UI.Views.CCKPackageExplorerView name="package-explorer-view" style="display: none; flex-grow: 1;" />
+</ui:UXML>

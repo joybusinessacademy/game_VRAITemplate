@@ -1,0 +1,21 @@
+{
+  "name": "com.skillsvr.nodesystem",
+  "version": "5.0.0",
+  "displayName": "Skills VR Node System Package",
+  "description": "Includes the Node System for Mechanics Package",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "keywords": [],
+  "author": {
+    "name": "SkillsVR",
+    "email": "gg@skillsvr.com",
+    "url": "https://skillsvr.com/"
+  },
+  "samples": [
+    {
+      "displayName": "Graph Data Validation Sample",
+      "description": "Contains sample scenes to test data validation with invalid nodes.",
+      "path": "Samples~/DataValidationSample"
+    }
+  ]
+}

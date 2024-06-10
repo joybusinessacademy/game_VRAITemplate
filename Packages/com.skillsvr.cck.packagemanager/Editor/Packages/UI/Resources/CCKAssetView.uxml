@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.skillsvr.cck.packagemanager/Editor/Packages/UI/Resources/CCKAssetView.uss?fileID=7433441132597879392&amp;guid=1842941c213cb7a47be2d0a26a364d6a&amp;type=3#CCKAssetView" />
+    <ui:VisualElement name="preview-image" text="Title" />
+    <ui:Label name="author-label" text="Author" binding-path="data.author.name" />
+    <ui:Label display-tooltip-when-elided="true" text="Asset Display Name a s d f" name="display-name" binding-path="data.displayName" />
+    <ui:VisualElement name="operation-bar">
+        <ui:VisualElement name="state-bar" style="flex-direction: row; flex-wrap: wrap; display: none;">
+            <ui:VisualElement name="space" style="flex-grow: 1;" />
+            <ui:Button display-tooltip-when-elided="true" name="locate-button" binding-path="LocateAsset" style="background-image: resource(&apos;Icon/Target&apos;); width: 20px; height: 20px;" />
+            <ui:Button display-tooltip-when-elided="true" name="menu-button" binding-path="ShowAssetMenu" style="background-image: resource(&apos;Icon/Settings&apos;); width: 20px; height: 20px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="install-bar" style="flex-direction: row; flex-wrap: wrap;">
+            <ui:VisualElement name="space" style="flex-grow: 1;" />
+            <ui:VisualElement name="icon-install" style="background-image: resource(&apos;Icon/CloudDownload&apos;);" />
+            <ui:Button text="Install" display-tooltip-when-elided="true" name="button-install" binding-path="InstallAsset" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

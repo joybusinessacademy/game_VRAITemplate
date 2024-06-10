@@ -1,0 +1,101 @@
+﻿PropsHierarchyVisualElement {
+    flex: 1;
+    
+}
+
+#tool-bar {
+    flex-shrink: 0;
+    flex-direction: row;
+    border-bottom-width: 1;
+    border-bottom-color: #282828;
+}
+
+#add-button {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2;
+    padding-right: 2;
+}
+
+#add-button:hover {
+    background-color: #454545;
+}
+
+#add-button > #add-icon {
+    width: 37;
+    height: 20;
+    padding: 0;
+}
+
+ToolbarSearchField {
+    flex: 1;
+    margin-left: 8;
+}
+
+PropHierarchyItem {
+    flex-direction: row;
+    padding: 1;
+    padding-left: 5;
+
+    border-left-width: 2;
+    border-top-width: 2;
+    border-right-width: 2;
+    border-bottom-width: 2;
+
+    border-top-left-radius: 5;
+    border-top-right-radius: 5;
+    border-bottom-left-radius: 5;
+    border-bottom-right-radius: 5;
+}
+
+PropHierarchyItem:hover {
+    background-color: #444444;
+}
+
+PropHierarchyItem.selected {
+    background-color: #2c5c86;
+}
+
+PropHierarchyItem > Toggle {
+    margin: 2;
+}
+
+PropHierarchyItem > RenameVisualElement {
+    padding-top: 1;
+    margin-left: 5;
+}
+
+
+PropHierarchyItem > Button > Image {
+    width: 18;
+    height: 18;
+    padding: 0;
+}
+
+#create-hotspot {
+    flex-direction: row;
+    padding: 2;
+}
+
+#create-hotspot:hover {
+    background-color: #676767;
+}
+
+
+#create-hotspot > Image {
+    width: 20;
+    height: 20;
+    padding: 0;
+}
+
+.object-disabled > * > Label {
+    color: #707070;
+}
+.object-highlighted  {
+    border-color: #ffbf1a ;
+}
+
+#empty-text {
+    margin: 3;
+    -unity-text-align: upper-center;
+}

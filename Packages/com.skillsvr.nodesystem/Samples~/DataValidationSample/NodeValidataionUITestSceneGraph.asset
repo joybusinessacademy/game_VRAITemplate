@@ -1,0 +1,1110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d59f319020e461f84f575aaadf90a7c, type: 3}
+  m_Name: NodeValidataionUITestSceneGraph
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - rid: 3411513497920471078
+  - rid: 3411513497920471079
+  - rid: 3411513497920471088
+  - rid: 3411513497920471089
+  - rid: 3411513497920471090
+  - rid: 3411513497920471097
+  - rid: 3411513497920471098
+  - rid: 3411513497920471106
+  - rid: 3411513497920471112
+  - rid: 3411513497920471113
+  - rid: 3411513497920471119
+  - rid: 3411513497920471120
+  - rid: 3411513497920471121
+  - rid: 3411513497920471123
+  - rid: 3411513497920471125
+  - rid: 3411513497920471128
+  - rid: 3411513497920471129
+  - rid: 3411513497920471130
+  - rid: 3411513497920471132
+  - rid: 3411513497920471134
+  - rid: 3411513497920471137
+  - rid: 3411513497920471141
+  - rid: 3411513497920471149
+  - rid: 3411513497920471216
+  - rid: 3411513497920471217
+  - rid: 3411513497920471218
+  - rid: 3411513497920471288
+  - rid: 3411513639413481481
+  - rid: 3411513639413481614
+  - rid: 3411513639413481615
+  - rid: 3411513639413481633
+  - rid: 3411513639413481640
+  - rid: 3411513639413481661
+  - rid: 3411513639413481662
+  - rid: 3411513639413481663
+  - rid: 3411513639413481664
+  - rid: 3411513639413481665
+  - rid: 3411513639413481666
+  - rid: 3411513639413481667
+  edges: []
+  groups:
+  - title: Flow
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: -2241.3486
+      y: -549.7907
+      width: 386
+      height: 450
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 727fd58b-16fe-4116-8cc8-ee048333d47a
+    - 39abd3fc-e1a8-4f30-bf88-b0b2be7b6ce4
+    - 22919097-9b75-45c6-9209-04974e4d35de
+    - c01b4d75-8540-4bd8-8f01-529a624f032b
+  - title: Advanced
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: -1685.3485
+      y: -550.79095
+      width: 360
+      height: 652
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - f507e5c9-89cf-4d12-8e58-cc4a287e5619
+    - e4e71af2-e8ab-4d04-a0c7-c30b44758699
+    - acae5852-a2c9-4655-ad32-4941656a8f7a
+  - title: Character Control
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: -1162.3488
+      y: -552.79083
+      width: 1459
+      height: 553
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 3bd42e73-3ee9-47f9-a770-4c4c4410c773
+    - 3e5f6e25-4fca-482d-a765-fb9926566fe6
+    - 06275623-e706-4587-95ed-36e30aa4b7de
+    - 97ef0309-0778-43cb-9144-a9fb06b224f6
+    - 18dce28d-3382-4d44-9cc2-11d5f7c6b906
+    - 83c43f14-be0e-494e-b6c6-ae2073c7cfdb
+    - 5d910cca-2633-4f48-8569-a67ebfa8c0b0
+    - 90ae585a-c10e-4c5a-9e91-4f0501969521
+  - title: Learning Exp
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: -2298.243
+      y: 204.44044
+      width: 5999
+      height: 565
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 708c7cab-f224-493d-96e3-9644b7a4bcf2
+    - 2bd4a83b-0c7b-4548-b97e-e8e885c90407
+    - 8b7345f9-85b5-432e-90e1-30648e0a4ea7
+    - a0854467-548c-4e20-9cdf-ea67d65e1f97
+    - 29d58b71-1959-4201-a0cf-56b84c278f5b
+    - ca46c8ff-a710-4fba-9b56-64fd7fcc8390
+    - 6d5f9bbe-7115-4502-b58e-2b087e217faf
+    - 2e8fe04f-81ef-4770-a893-8915175b9a78
+    - 9637fe83-f4c3-4233-bf22-74ed883cb6d2
+    - 9d032c97-92aa-42e4-9167-06e8906163d5
+    - d0ccebcf-7081-4f6d-a968-df61f1dc5a73
+    - c5fcbd91-8335-4841-8f7a-af0b2046f8a4
+    - 64edd4a8-74f7-40ac-a806-f4cd0e55f5c6
+    - 9cbe386d-b7f4-47ca-be6e-6b659b0cec57
+    - 2933abfd-4be3-4cfa-8b92-0bc485f7aac0
+    - 787d907e-b1b8-4753-85bd-4f3d3f0bd168
+    - 9f444139-56dd-45cd-97c4-d2223d0ea982
+    - e35d66a5-517b-4738-b32c-e132592225c4
+    - cd620efd-7e59-4ec4-9271-45eeae9ace50
+    - 7cd18df7-3e7b-4010-aabb-403773b4953a
+    - ea6a494d-cb7e-43c2-b960-c6dfac9fc302
+    - e6addb91-a0ba-48b9-ac35-d6e4998e054b
+    - 80c8cddc-4ea3-4721-8767-f12cdb2e1420
+  - title: Video
+    color: {r: 0, g: 0, b: 0, a: 0.3}
+    position:
+      serializedVersion: 2
+      x: 401.7288
+      y: -556.2508
+      width: 246
+      height: 179
+    size: {x: 400, y: 200}
+    innerNodeGUIDs:
+    - 8273faa4-a73c-425f-83bd-6871b3509b57
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3411513497920471078
+      type: {class: StartNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 727fd58b-16fe-4116-8cc8-ee048333d47a
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: -2216.3486
+          y: -490.7907
+          width: 125
+          height: 95
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        fadeDuration: -5
+        targetTransitionName: ScreenFadeToColor
+    - rid: 3411513497920471079
+      type: {class: EndNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 39abd3fc-e1a8-4f30-bf88-b0b2be7b6ce4
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: -2030.3485
+          y: -490.7907
+          width: 150
+          height: 163
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        targetTransitionName: ScreenFadeToColor
+        fade: 1
+        fadeDuration: -5
+        fadeColor: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 3411513497920471088
+      type: {class: UnityEventNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: f507e5c9-89cf-4d12-8e58-cc4a287e5619
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: -1660.3486
+          y: -491.7907
+          width: 147
+          height: 144
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        unityEventName: none
+        delay: 2
+        waitForEvent: 0
+        enableCallbackToCompleteNode: 0
+    - rid: 3411513497920471089
+      type: {class: UnityEventNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: e4e71af2-e8ab-4d04-a0c7-c30b44758699
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: -1660.3486
+          y: -164.79077
+          width: 310
+          height: 241
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        unityEventName: Scene Element Manager/EmptyUnityEvent
+        delay: 60
+        waitForEvent: 0
+        enableCallbackToCompleteNode: 0
+    - rid: 3411513497920471090
+      type: {class: UnityEventNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: acae5852-a2c9-4655-ad32-4941656a8f7a
+        computeOrder: 4
+        position:
+          serializedVersion: 2
+          x: -1660.3486
+          y: -328.7907
+          width: 216
+          height: 144
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        unityEventName: BadEvent/NotExistEvent
+        delay: 2
+        waitForEvent: 0
+        enableCallbackToCompleteNode: 0
+    - rid: 3411513497920471097
+      type: {class: AnimationNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 3bd42e73-3ee9-47f9-a770-4c4c4410c773
+        computeOrder: 5
+        position:
+          serializedVersion: 2
+          x: -1137.3486
+          y: -482.7906
+          width: 222
+          height: 150
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        sceneAnimationName: none
+        waitForAnimationToFinish: 0
+        animation: {fileID: 0}
+    - rid: 3411513497920471098
+      type: {class: AnimationNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 3e5f6e25-4fca-482d-a765-fb9926566fe6
+        computeOrder: 6
+        position:
+          serializedVersion: 2
+          x: -1137.3486
+          y: -294.79077
+          width: 294
+          height: 150
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        sceneAnimationName: BadRef/NotExistNPC
+        waitForAnimationToFinish: 0
+        animation: {fileID: 0}
+    - rid: 3411513497920471106
+      type: {class: DialogueNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 06275623-e706-4587-95ed-36e30aa4b7de
+        computeOrder: 7
+        position:
+          serializedVersion: 2
+          x: -783.34845
+          y: -485.7906
+          width: 312
+          height: 293
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        dialogueAsset: {fileID: 0}
+        dialoguePosition: BadRef/NotExistNPC
+    - rid: 3411513497920471112
+      type: {class: CharacterEnableNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 97ef0309-0778-43cb-9144-a9fb06b224f6
+        computeOrder: 8
+        position:
+          serializedVersion: 2
+          x: -404.34848
+          y: -485.7906
+          width: 245
+          height: 115
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        setStateToEnabled: 1
+        characterName: Null
+    - rid: 3411513497920471113
+      type: {class: CharacterEnableNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 18dce28d-3382-4d44-9cc2-11d5f7c6b906
+        computeOrder: 9
+        position:
+          serializedVersion: 2
+          x: -404.34848
+          y: -360.7907
+          width: 248
+          height: 117
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        setStateToEnabled: 0
+        characterName: BadRef/NotExistCharacter
+    - rid: 3411513497920471119
+      type: {class: TimelineNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 83c43f14-be0e-494e-b6c6-ae2073c7cfdb
+        computeOrder: 10
+        position:
+          serializedVersion: 2
+          x: -71.34833
+          y: -307.7907
+          width: 343
+          height: 139
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        director: Scene Element Manager/newSceneTimeline
+        timeline: {fileID: 0}
+        target: GameObject/-C4a-Male-30-ShortsWorkApron
+    - rid: 3411513497920471120
+      type: {class: TimelineNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 5d910cca-2633-4f48-8569-a67ebfa8c0b0
+        computeOrder: 11
+        position:
+          serializedVersion: 2
+          x: -76.34863
+          y: -493.7907
+          width: 229
+          height: 161
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        director: BadRef/NotExistDirector
+        timeline: {fileID: 11400000, guid: 56593535dba03be4389cfd49877e4085, type: 2}
+        target: 
+    - rid: 3411513497920471121
+      type: {class: TimelineNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 90ae585a-c10e-4c5a-9e91-4f0501969521
+        computeOrder: 12
+        position:
+          serializedVersion: 2
+          x: -71.34833
+          y: -139.79071
+          width: 148
+          height: 115
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        director: 
+        timeline: {fileID: 0}
+        target: 
+    - rid: 3411513497920471123
+      type: {class: StartNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: c01b4d75-8540-4bd8-8f01-529a624f032b
+        computeOrder: 13
+        position:
+          serializedVersion: 2
+          x: -2216.3486
+          y: -358.7906
+          width: 125
+          height: 95
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        fadeDuration: 50
+        targetTransitionName: ScreenFadeToColor
+    - rid: 3411513497920471125
+      type: {class: EndNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 22919097-9b75-45c6-9209-04974e4d35de
+        computeOrder: 14
+        position:
+          serializedVersion: 2
+          x: -2030.3485
+          y: -287.79077
+          width: 150
+          height: 163
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        targetTransitionName: ScreenFadeToColor
+        fade: 1
+        fadeDuration: 50
+        fadeColor: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 3411513497920471128
+      type: {class: AudioPlaybackNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 708c7cab-f224-493d-96e3-9644b7a4bcf2
+        computeOrder: 15
+        position:
+          serializedVersion: 2
+          x: -2273.2432
+          y: 269.44046
+          width: 433
+          height: 128
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          audioClip: {fileID: 0}
+          audioSource: {fileID: 0}
+          playbackTime: 0
+          startPlaybackOnMechanicStart: 1
+          stopMechanicOnPlaybackStop: 1
+        number: 0
+        mechanicObject: {fileID: 0}
+        AssociatedRecorderNodesaveName: 1
+        AssociatedPlaybackSceneAudio: 
+        AssociatedCustomClip: 
+    - rid: 3411513497920471129
+      type: {class: AudioRecorderNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 2bd4a83b-0c7b-4548-b97e-e8e885c90407
+        computeOrder: 16
+        position:
+          serializedVersion: 2
+          x: -1711.478
+          y: 256.49997
+          width: 433
+          height: 281
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          recorderName: Audio x
+          audioClip: {fileID: 0}
+          clipDuration: 0
+          loop: 0
+          exportLoopClip: 1
+          isRecording: 0
+          currentSamplePos: 0
+          startRecordOnMechanicStart: 1
+          stopMechanicOnRecordStop: 1
+          startRecordingInformationText: 
+          stopRecordingInformationText: 
+        number: 0
+        mechanicObject: {fileID: 0}
+        saveName: 
+        inputIds: Axis9||Axis10
+        nodePresetKey: 
+        enableMaxRecordDuration: 1
+        keepMechanicAliveAfterRecord: 0
+    - rid: 3411513497920471130
+      type: {class: BreathingNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 8b7345f9-85b5-432e-90e1-30648e0a4ea7
+        computeOrder: 17
+        position:
+          serializedVersion: 2
+          x: -1155.4501
+          y: 257
+          width: 433
+          height: 204
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: Relative to Learner/Front Center
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          duration: 0
+          autoHideAfterSuccess: 1
+          autoBrathOut: 1
+          timeout: 20
+          style: 0
+          breathIn: 2
+          breatheOut: 3
+          style2Timeout: 20
+        number: 0
+        mechanicObject: {fileID: 0}
+        inputIds: Axis9&&Axis10
+    - rid: 3411513497920471132
+      type: {class: MarkerQuestionsNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: a0854467-548c-4e20-9cdf-ea67d65e1f97
+        computeOrder: 18
+        position:
+          serializedVersion: 2
+          x: -163.49997
+          y: 627
+          width: 785
+          height: 442
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: Relative to Learner/Front Center
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          markerDatas:
+          - spawnPoint: {fileID: 0}
+            isCorrectMarker: 0
+            useCustomSprite: 1
+            changeMarkerSprite: {fileID: 0}
+          - spawnPoint: {fileID: 0}
+            isCorrectMarker: 0
+            useCustomSprite: 0
+            changeMarkerSprite: {fileID: 0}
+          - spawnPoint: {fileID: 0}
+            isCorrectMarker: 0
+            useCustomSprite: 1
+            changeMarkerSprite: {fileID: 21300000, guid: f9161c6c9e06dc445ada3ee16d991f90, type: 3}
+          - spawnPoint: {fileID: 0}
+            isCorrectMarker: 0
+            useCustomSprite: 1
+            changeMarkerSprite: {fileID: 21300000, guid: d98fbe17966d8ef449b25b99024bf36f, type: 3}
+          lockInButtonLocation: {fileID: 0}
+          markerQuestionFeedback: 0
+          isVisualOnStart: 0
+          checkStraightAway: 1
+          untoggleOthers: 1
+          generateLockInButton: 0
+        number: 0
+        mechanicObject: {fileID: 0}
+        allGameObjects:
+        - Relative to Learner/Front Center
+        - 
+        - BadRef/NotExistPosition
+        - BadRef/NotExistPosition
+        lockInButtonLocationString: 
+    - rid: 3411513497920471134
+      type: {class: MultipleChoiceQuestionNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 29d58b71-1959-4201-a0cf-56b84c278f5b
+        computeOrder: 19
+        position:
+          serializedVersion: 2
+          x: 768.0435
+          y: 263
+          width: 280
+          height: 332
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"isVisualOnSpawn":true,"questionTitle":{"LocalisationSource":{"rid":1000}},"questions":[],"multipleChoiceFeedback":0,"endOnIncorrectAnswer":true,"allowMultipleSelection":false,"minSelectionAmount":1,"useSounds":false,"delayTimeUntilTurnedOff":-5.0,"shuffleAnswers":true,"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}}]}}'
+        data: {fileID: 0}
+    - rid: 3411513497920471137
+      type: {class: PopupNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: ca46c8ff-a710-4fba-9b56-64fd7fcc8390
+        computeOrder: 20
+        position:
+          serializedVersion: 2
+          x: 1360
+          y: 237
+          width: 329
+          height: 241
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"isVisualOnSpawn":false,"buttonText":{"LocalisationSource":{"rid":1000}},"information":{"LocalisationSource":{"rid":1001}},"infoPopUpStyle":0,"hasNextButton":false,"timeUntilDisappear":999.0,"useMarker":false,"multiMediaInformation":{"LocalisationSource":{"rid":1002}},"showCustomImage":true,"imageToShow":{"instanceID":0},"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Next"}},{"rid":1001,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"1"}},{"rid":1002,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"MultiMedia
+          Information 123\nasdfa"}}]}}'
+    - rid: 3411513497920471141
+      type: {class: RankOrderNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 6d5f9bbe-7115-4502-b58e-2b087e217faf
+        computeOrder: 21
+        position:
+          serializedVersion: 2
+          x: 1967.5505
+          y: 263.00006
+          width: 598
+          height: 481
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"showTitle":false,"slotsTitle":{"LocalisationSource":{"rid":1000}},"itemTitle":{"LocalisationSource":{"rid":1001}},"continueButtonTitle":{"LocalisationSource":{"rid":1002}},"rankOrderItems":[{"title":{"LocalisationSource":{"rid":1003}},"rankItemID":0}],"rankOrderSlots":[{"title":{"LocalisationSource":{"rid":1004}},"rankSlotID":0,"hasCustomTitle":false,"customTitle":{"LocalisationSource":{"rid":1005}},"customTitleTextColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0}}],"isVisualOnStart":false,"checkForAnswers":true,"continueOnFail":true,"stackItems":false,"slotOnSameID":false,"shuffleAnswers":false,"keepColorsShown":true,"timeToShowAnswers":2.0,"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Slots
+          Title Text"}},{"rid":1001,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Items
+          Title Text"}},{"rid":1002,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Continue
+          Button Text"}},{"rid":1003,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Item
+          Text"}},{"rid":1004,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}},{"rid":1005,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Custom
+          Title Text"}}]}}'
+        currentSelectedRankType: 0
+    - rid: 3411513497920471149
+      type: {class: TeleportNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 2e8fe04f-81ef-4770-a893-8915175b9a78
+        computeOrder: 22
+        position:
+          serializedVersion: 2
+          x: 2825.355
+          y: 263
+          width: 280
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"teleportType":0}'
+    - rid: 3411513497920471216
+      type: {class: AudioPlaybackNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 9637fe83-f4c3-4233-bf22-74ed883cb6d2
+        computeOrder: 23
+        position:
+          serializedVersion: 2
+          x: -2272.9995
+          y: 420.00006
+          width: 392
+          height: 128
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          audioClip: {fileID: 0}
+          audioSource: {fileID: 0}
+          playbackTime: 0
+          startPlaybackOnMechanicStart: 1
+          stopMechanicOnPlaybackStop: 1
+        number: 0
+        mechanicObject: {fileID: 0}
+        AssociatedRecorderNodesaveName: 
+        AssociatedPlaybackSceneAudio: 
+        AssociatedCustomClip: 
+    - rid: 3411513497920471217
+      type: {class: AudioPlaybackNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 9d032c97-92aa-42e4-9167-06e8906163d5
+        computeOrder: 24
+        position:
+          serializedVersion: 2
+          x: -2272.9995
+          y: 579.1346
+          width: 280
+          height: 126
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          audioClip: {fileID: 0}
+          audioSource: {fileID: 0}
+          playbackTime: 0
+          startPlaybackOnMechanicStart: 1
+          stopMechanicOnPlaybackStop: 1
+        number: 0
+        mechanicObject: {fileID: 0}
+        AssociatedRecorderNodesaveName: asdfasdf
+        AssociatedPlaybackSceneAudio: 
+        AssociatedCustomClip: 
+    - rid: 3411513497920471218
+      type: {class: AudioRecorderNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: d0ccebcf-7081-4f6d-a968-df61f1dc5a73
+        computeOrder: 25
+        position:
+          serializedVersion: 2
+          x: -1711.0002
+          y: 579
+          width: 433
+          height: 178
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: Relative to Learner/Front Center
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          recorderName: Audio 1
+          audioClip: {fileID: 0}
+          clipDuration: 3
+          loop: 0
+          exportLoopClip: 1
+          isRecording: 0
+          currentSamplePos: 0
+          startRecordOnMechanicStart: 1
+          stopMechanicOnRecordStop: 1
+          startRecordingInformationText: 2
+          stopRecordingInformationText: 3
+        number: 0
+        mechanicObject: {fileID: 0}
+        saveName: 1
+        inputIds: Axis9||Axis10
+        nodePresetKey: 
+        enableMaxRecordDuration: 1
+        keepMechanicAliveAfterRecord: 0
+    - rid: 3411513497920471288
+      type: {class: BreathingNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: c5fcbd91-8335-4841-8f7a-af0b2046f8a4
+        computeOrder: 26
+        position:
+          serializedVersion: 2
+          x: -1155
+          y: 503.7001
+          width: 433
+          height: 184
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: Relative to Learner/Front Center
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          duration: 6
+          autoHideAfterSuccess: 1
+          autoBrathOut: 1
+          timeout: 20
+          style: 1
+          breathIn: 0
+          breatheOut: 0
+          style2Timeout: 0
+        number: 0
+        mechanicObject: {fileID: 0}
+        inputIds: Axis9&&Axis10
+    - rid: 3411513639413481481
+      type: {class: LearningRecordNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 64edd4a8-74f7-40ac-a806-f4cd0e55f5c6
+        computeOrder: 27
+        position:
+          serializedVersion: 2
+          x: -605.6476
+          y: 256.99997
+          width: 306
+          height: 150
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        learningRecordPortalId: 
+        learningRecordId: 
+        idTargetValue: 1
+    - rid: 3411513639413481614
+      type: {class: MarkerQuestionsNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 9cbe386d-b7f4-47ca-be6e-6b659b0cec57
+        computeOrder: 28
+        position:
+          serializedVersion: 2
+          x: -165
+          y: 263
+          width: 744
+          height: 315
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: Relative to Learner/Front Center
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          markerDatas:
+          - spawnPoint: {fileID: 0}
+            isCorrectMarker: 0
+            useCustomSprite: 0
+            changeMarkerSprite: {fileID: 0}
+          lockInButtonLocation: {fileID: 0}
+          markerQuestionFeedback: 0
+          isVisualOnStart: 0
+          checkStraightAway: 1
+          untoggleOthers: 1
+          generateLockInButton: 0
+        number: 0
+        mechanicObject: {fileID: 0}
+        allGameObjects:
+        - 
+        lockInButtonLocationString: BadRef/NotExistPosition
+    - rid: 3411513639413481615
+      type: {class: MultipleChoiceQuestionNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 2933abfd-4be3-4cfa-8b92-0bc485f7aac0
+        computeOrder: 29
+        position:
+          serializedVersion: 2
+          x: 768
+          y: 627
+          width: 392
+          height: 424
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"isVisualOnSpawn":true,"questionTitle":{"LocalisationSource":{"rid":1000}},"questions":[{"answerText":{"LocalisationSource":{"rid":1001}},"isCorrectAnswer":false},{"answerText":{"LocalisationSource":{"rid":1002}},"isCorrectAnswer":false}],"multipleChoiceFeedback":0,"endOnIncorrectAnswer":true,"allowMultipleSelection":false,"minSelectionAmount":1,"useSounds":false,"delayTimeUntilTurnedOff":334.0,"shuffleAnswers":true,"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"New
+          Question"}},{"rid":1001,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Answer
+          Text"}},{"rid":1002,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}}]}}'
+        data: {fileID: 0}
+    - rid: 3411513639413481633
+      type: {class: PopupNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 787d907e-b1b8-4753-85bd-4f3d3f0bd168
+        computeOrder: 30
+        position:
+          serializedVersion: 2
+          x: 1390
+          y: 562
+          width: 392
+          height: 291
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"isVisualOnSpawn":false,"buttonText":{"LocalisationSource":{"rid":1000}},"information":{"LocalisationSource":{"rid":1001}},"infoPopUpStyle":0,"hasNextButton":false,"timeUntilDisappear":-5.0,"useMarker":false,"multiMediaInformation":{"LocalisationSource":{"rid":1002}},"showCustomImage":true,"imageToShow":{"instanceID":0},"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Next"}},{"rid":1001,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}},{"rid":1002,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}}]}}'
+    - rid: 3411513639413481640
+      type: {class: PopupNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 9f444139-56dd-45cd-97c4-d2223d0ea982
+        computeOrder: 31
+        position:
+          serializedVersion: 2
+          x: 1390
+          y: 876
+          width: 392
+          height: 228
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"isVisualOnSpawn":false,"buttonText":{"LocalisationSource":{"rid":1000}},"information":{"LocalisationSource":{"rid":1001}},"infoPopUpStyle":0,"hasNextButton":true,"timeUntilDisappear":-5.0,"useMarker":false,"multiMediaInformation":{"LocalisationSource":{"rid":1002}},"showCustomImage":true,"imageToShow":{"instanceID":0},"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}},{"rid":1001,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}},{"rid":1002,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":""}}]}}'
+    - rid: 3411513639413481661
+      type: {class: TeleportNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: e35d66a5-517b-4738-b32c-e132592225c4
+        computeOrder: 32
+        position:
+          serializedVersion: 2
+          x: 2825
+          y: 407.31503
+          width: 280
+          height: 122
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"teleportType":0}'
+    - rid: 3411513639413481662
+      type: {class: PanoramaVideoNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 8273faa4-a73c-425f-83bd-6871b3509b57
+        computeOrder: 33
+        position:
+          serializedVersion: 2
+          x: 426.7287
+          y: -497.2508
+          width: 196
+          height: 95
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        setVideoClip: {fileID: 0}
+        videoClipLocation: 
+        panoramaVideoSystem: {fileID: 0}
+        videoGameobject: {fileID: 0}
+        videoPlayerItem: {fileID: 11400000, guid: bb21a0382d4906d42aecd922384a8b7e, type: 2}
+        transitionType: 0
+        videoImageType: 180
+        videoLayoutType: 0
+        loopVideo: 0
+        videoStartTime: 0
+        videoCutoffTime: 0
+        loopSectionVideo: 0
+        loopSectionDuration: 0
+        virtualNorth: 0
+        volumeSetting: 1
+        volumeBooster: 1
+        panoramaMechanicEventDatas: []
+    - rid: 3411513639413481663
+      type: {class: TimerNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: cd620efd-7e59-4ec4-9271-45eeae9ace50
+        computeOrder: 34
+        position:
+          serializedVersion: 2
+          x: 3379.3
+          y: 263
+          width: 280
+          height: 142
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: 
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          countDownTime: 1
+          amountOfTimeInSeconds: 999
+        number: 0
+        mechanicObject: {fileID: 0}
+    - rid: 3411513639413481664
+      type: {class: TimerNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 7cd18df7-3e7b-4010-aabb-403773b4953a
+        computeOrder: 35
+        position:
+          serializedVersion: 2
+          x: 3379
+          y: 459.0001
+          width: 392
+          height: 144
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData:
+          countDownTime: 1
+          amountOfTimeInSeconds: -5
+        number: 0
+        mechanicObject: {fileID: 0}
+    - rid: 3411513639413481665
+      type: {class: PlayerTransitionNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: ea6a494d-cb7e-43c2-b960-c6dfac9fc302
+        computeOrder: 36
+        position:
+          serializedVersion: 2
+          x: 3894
+          y: 263
+          width: 150
+          height: 117
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        targetColor: {r: 1, g: 1, b: 1, a: 1}
+        transitionTime: -5
+        targetTransitionName: ScreenFadeToColor
+    - rid: 3411513639413481666
+      type: {class: PlayerTransitionNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: e6addb91-a0ba-48b9-ac35-d6e4998e054b
+        computeOrder: 37
+        position:
+          serializedVersion: 2
+          x: 3894
+          y: 424
+          width: 150
+          height: 117
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        targetColor: {r: 1, g: 1, b: 1, a: 1}
+        transitionTime: 30
+        targetTransitionName: ScreenFadeToColor
+    - rid: 3411513639413481667
+      type: {class: RankOrderNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: 
+        GUID: 80c8cddc-4ea3-4721-8767-f12cdb2e1420
+        computeOrder: 38
+        position:
+          serializedVersion: 2
+          x: 1968.0004
+          y: 840.3001
+          width: 598
+          height: 644
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        spawnPosition: BadRef/NotExistPosition
+        panoramaSpawnPosition: 0
+        mechanicSpawner: {fileID: 0}
+        SpawnSize: 1
+        mechanicData: {fileID: 0}
+        number: 0
+        mechanicObject: {fileID: 0}
+        mechanicDataCache: {fileID: 0}
+        mechanicDataJSON: '{"showTitle":false,"slotsTitle":{"LocalisationSource":{"rid":1000}},"itemTitle":{"LocalisationSource":{"rid":1001}},"continueButtonTitle":{"LocalisationSource":{"rid":1002}},"rankOrderItems":[{"title":{"LocalisationSource":{"rid":1003}},"rankItemID":0}],"rankOrderSlots":[{"title":{"LocalisationSource":{"rid":1004}},"rankSlotID":0,"hasCustomTitle":true,"customTitle":{"LocalisationSource":{"rid":1005}},"customTitleTextColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0}},{"title":{"LocalisationSource":{"rid":1006}},"rankSlotID":0,"hasCustomTitle":false,"customTitle":{"LocalisationSource":{"rid":1007}},"customTitleTextColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0}}],"isVisualOnStart":false,"checkForAnswers":true,"continueOnFail":true,"stackItems":false,"slotOnSameID":false,"shuffleAnswers":false,"keepColorsShown":true,"timeToShowAnswers":2.0,"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Slots
+          Title Text"}},{"rid":1001,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Items
+          Title Text"}},{"rid":1002,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Continue
+          Button Text"}},{"rid":1003,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Item
+          Text"}},{"rid":1004,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Slot
+          Text"}},{"rid":1005,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Custom
+          Title Text"}},{"rid":1006,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Slot
+          Text"}},{"rid":1007,"type":{"class":"DefaultLocalisationSource","ns":"DialogExporter","asm":"SkillsVR.Localisation"},"data":{"dialog":"Custom
+          Title Text"}}]}}'
+        currentSelectedRankType: 0

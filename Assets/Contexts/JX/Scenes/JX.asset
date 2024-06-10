@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d50089a84c4922b85260769155e56f, type: 3}
+  m_Name: JX
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - rid: 5729539811823058944
+  - rid: 5729539811823058945
+  - rid: 5729539811823058998
+  edges:
+  - GUID: 62fa86e7-6ed9-4e8f-9602-9285e099d5de
+    owner: {fileID: 11400000}
+    inputNodeGUID: 422ecdb2-f668-4407-8089-6b43d46edcc5
+    outputNodeGUID: 5e6bc4cd-b9b6-4f7f-abca-47e10289573d
+    inputFieldName: executed
+    outputFieldName: executes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5729539811823058944
+      type: {class: MainStartNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: Start
+        GUID: 5e6bc4cd-b9b6-4f7f-abca-47e10289573d
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 0
+          y: -1
+          width: 144
+          height: 108
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+    - rid: 5729539811823058945
+      type: {class: EndNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: End
+        GUID: 2addc7cf-4967-41dd-90da-85be944e82d5
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 754.09357
+          y: -0.9999948
+          width: 144
+          height: 108
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        targetTransitionName: ScreenFadeToColor
+        fade: 1
+        fadeDuration: 0.5
+        fadeColor: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 5729539811823058998
+      type: {class: SceneNode, ns: SkillsVRNodes.Scripts.Nodes, asm: NodeAssemblyDefinitionRuntime}
+      data:
+        nodeCustomName: Scene
+        GUID: 422ecdb2-f668-4407-8089-6b43d46edcc5
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 250
+          y: -0.9999758
+          width: 244
+          height: 184
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        scenePath: Assets/Contexts/JX/Scenes/trianingtest.unity
+        additiveScenePaths:
+        - Packages/com.skillsvr.environment.whiteroom/Runtime/Scenes/WhiteRoom.unity
+        audioClip: {fileID: 0}
+        templateId: AI Coaching
+        npcId: 
+        threadId: thread_NBfuP2SRNxS6gH77fsBXHij0
+        assistantId: 
+        assistantInstruction: you are expert in math and you teach it post graduate
+        assitantFiles: 
+        vectorStoreId: NULL_ID

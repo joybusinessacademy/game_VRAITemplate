@@ -1,0 +1,18 @@
+SliderFloat {
+    flex-direction: row;
+    margin-left: 3;
+}
+
+SliderFloat > Label {
+    width: 50%;
+}
+
+SliderFloat > Slider {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+SliderFloat > FloatField {
+    width: 40;
+    flex-shrink: 1;
+}

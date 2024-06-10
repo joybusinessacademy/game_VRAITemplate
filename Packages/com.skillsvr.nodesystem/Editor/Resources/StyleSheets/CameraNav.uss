@@ -1,0 +1,35 @@
+﻿CameraNavVisualElement {
+    background-color: #424242;
+    padding: 3;
+    border-radius: 5;
+    margin: 3;
+}
+
+CameraNavVisualElement > Label {
+    -unity-font-style: bold;
+    padding: 3;
+}
+
+VisualElement {
+    flex-direction: column;
+}
+
+VisualElement > Button {
+    margin-bottom: 5px; 
+    width: 80; 
+}
+
+VisualElement > Button:hover {
+    color: white;
+}
+
+VisualElement > Toggle {
+    align-content: center;
+    align-self: center;
+    height: 100%;
+    margin: 3;
+}
+
+Toggle > Label {
+    min-width: 0;
+}

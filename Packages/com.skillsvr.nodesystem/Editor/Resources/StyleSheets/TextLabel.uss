@@ -1,0 +1,11 @@
+﻿TextLabel {
+    flex-direction: row;
+}
+TextLabel > Label {
+    width: 50%;
+}
+
+#null-item {
+    -unity-font-style: italic;
+    color: grey;
+}

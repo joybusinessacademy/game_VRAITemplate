@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b1ebc2033847e43a27797aa36edaaa, type: 3}
+  m_Name: ECRecordConfig
+  m_EditorClassIdentifier: 
+  managedConfigs:
+  - domain: https://api-anz.skillsvr.com
+    loginData:
+      userName: 
+      password: 
+      scope: offline_access openid https://skvrentprodau.onmicrosoft.com/enterprise-api/ec-analytics.read
+        https://skvrentprodau.onmicrosoft.com/enterprise-api/ec-scenario.read https://skvrentprodau.onmicrosoft.com/enterprise-api/ec-cck-license.read
+        https://skvrentprodau.onmicrosoft.com/enterprise-api/ec-cck-log.write
+      clientId: 9e713211-e06d-4657-b134-ee447d90d2f2
+      loginUrl: https://skvrentprodau.b2clogin.com/skvrentprodau.onmicrosoft.com/B2C_1_ropc/oauth2/v2.0/token
+      selectedRegion: 1
+    scenarioId: 
+    durationMS: 0
+    managedRecords: []
+  currentConfigIndex: 0
+  onGameScoreBoolChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onResetAllGameScores:
+    m_PersistentCalls:
+      m_Calls: []

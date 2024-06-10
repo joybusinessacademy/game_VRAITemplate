@@ -1,0 +1,85 @@
+.login-email #unity-text-input {
+    background-color: white;
+    color: black;
+    height: 50px;
+    padding-left: 5px;
+}
+
+.login-password #unity-text-input {
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 300px;
+}
+
+.login-email Label {
+    color: black;
+    min-width: 110px;
+}
+
+.login-password Label {
+    color: black;
+    min-width: 110px;
+}
+
+.login-toggle Label {
+    color: black;
+}
+
+.login-region-dropdown Label {
+    color:black;
+}
+
+.login-hyperlink {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    opacity: 1;
+    display: flex;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    background-color: rgba(88, 88, 88, 0);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    -unity-text-outline-width: 0;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    -unity-font-style: normal;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.login-hyperlink:hover {
+    color: rgb(75, 75, 75);
+}
+
+.login-toggle #unity-checkmark {
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+}
+
+.login-toggle Label {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.login-button {
+    background-color: rgb(65, 75, 178);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    -unity-font-style: bold;
+    overflow: hidden;
+    height: 65px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}

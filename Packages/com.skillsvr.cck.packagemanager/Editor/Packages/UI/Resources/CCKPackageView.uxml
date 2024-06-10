@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label text="Select a package" display-tooltip-when-elided="true" name="no-package-info" style="display: none;" />
+    <ui:ScrollView name="package-view-container" style="flex-grow: 1; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+        <ui:Label text="SVR: Package Display Name" display-tooltip-when-elided="true" binding-path="data.displayName" name="display-name" style="font-size: 22px; -unity-font-style: bold; margin-top: 0; margin-bottom: 10px; margin-left: 0; margin-right: 0;" />
+        <ui:VisualElement name="version-group" style="flex-direction: row; margin-top: 3px; margin-left: 0; margin-right: 0; margin-bottom: 0;">
+            <ui:Label text="Version" display-tooltip-when-elided="true" name="version-title" />
+            <ui:Label text="1.0.0" display-tooltip-when-elided="true" binding-path="data.version" name="version" tabindex="1" style="margin-left: 5px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="registry-group" style="flex-direction: row; margin-top: 3px; margin-left: 0; margin-right: 0; margin-bottom: 0;">
+            <ui:Label text="Registry" display-tooltip-when-elided="true" name="registry-title" />
+            <ui:Label text="SkillsVR" display-tooltip-when-elided="true" binding-path="data.Parent.displayName" name="registry" tabindex="1" style="margin-left: 5px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="author-group" style="flex-direction: row; margin-top: 3px; margin-left: 0; margin-right: 0; margin-bottom: 0;">
+            <ui:Label text="SkillsVR" display-tooltip-when-elided="true" binding-path="data.author.name" name="author-name" tabindex="1" />
+            <ui:Label text="info@skillsvr.com" display-tooltip-when-elided="true" binding-path="data.author.email" name="author-email" style="margin-left: 5px;" />
+        </ui:VisualElement>
+        <ui:Label text="com.skillsvr.cck.package.name" display-tooltip-when-elided="true" binding-path="data.name" name="package-name" style="-unity-font-style: italic; margin-top: 3px; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+        <ui:VisualElement name="link-group" style="flex-direction: row; display: none; margin-top: 3px; margin-left: 0; margin-right: 0; margin-bottom: 0;">
+            <ui:Button text="View documentation" display-tooltip-when-elided="true" name="view-doc-button" binding-path="OpenDocumentLink" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-text-align: middle-left; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgb(51, 103, 241);" />
+            <ui:Button text="View changelog" display-tooltip-when-elided="true" name="view-change-log-button" binding-path="OpenChangeLogLink" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-text-align: middle-left; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgb(51, 103, 241);" />
+            <ui:Button text="View licenses" display-tooltip-when-elided="true" name="view-licenses-button" binding-path="OpenLicensesLink" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-text-align: middle-left; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgb(51, 103, 241); display: none;" />
+        </ui:VisualElement>
+        <ui:Label text="Package description" display-tooltip-when-elided="true" binding-path="data.description" name="description" style="margin-top: 3px; margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+        <ui:VisualElement name="assets-group" style="margin-top: 10px;">
+            <ui:Label text="Assets" display-tooltip-when-elided="true" name="assets-title-label" style="-unity-font-style: bold; font-size: 14px;" />
+            <ui:ScrollView name="assets-list-view" mode="Horizontal" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 3px; margin-bottom: 0; flex-grow: 1; overflow: hidden;" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+    <ui:VisualElement name="button-bar" style="flex-direction: row-reverse; border-top-width: 1px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; min-height: 35px;">
+        <ui:Button text="Uninstall" display-tooltip-when-elided="true" name="button-uninstall" binding-path="UninstallPackage" style="height: 25px; padding-left: 10px; padding-right: 10px;" />
+        <ui:Button text="Install" display-tooltip-when-elided="true" name="button-install" binding-path="InstallPackage" style="height: 25px; padding-left: 15px; padding-right: 15px;" />
+    </ui:VisualElement>
+</ui:UXML>

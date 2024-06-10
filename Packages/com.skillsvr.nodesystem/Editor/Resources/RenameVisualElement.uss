@@ -1,0 +1,17 @@
+RenameVisualElement {
+    flex-grow: 1;
+}
+
+RenameVisualElement > Button {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+RenameVisualElement > Button > Label {
+    flex-grow: 1;
+    border-width: 1;
+    padding: 2;
+    padding-top: 1;
+    padding-bottom: 0;
+    -unity-text-align: middle-left;
+}

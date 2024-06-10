@@ -1,0 +1,41 @@
+#unity-panel-container14 > #graphRootView {
+    background-color: #101010;
+}
+
+#graphRootView > .graphView {
+    bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.graphView > GridBackground {
+    --grid-background-color: #101010;
+    --line-color: rgba(27, 27, 27, 0.66);
+    --thick-line-color: rgb(27, 27, 27);
+    --spacing: 25;
+}
+
+
+#heading {
+    font-size: 32;
+    -unity-font-style: bold;
+    margin: 10;
+    margin-left: 12;
+    margin-bottom: 0;
+}
+
+#subHeading {
+    font-size: 16;
+    margin-left: 12;
+}
+
+.unity-base-field > .unity-label {
+    min-width: 0;
+}
+
+
+

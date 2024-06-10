@@ -1,0 +1,33 @@
+
+
+#controls > .unity-label:disabled {
+    padding: 0;
+    border-width: 0;
+    margin: 0;
+}
+
+#NewSceneButton:disabled {
+    padding: 0;
+    border-width: 0;
+    margin: 0;
+}
+
+#controls > .unity-label {
+    margin: 3;
+    padding: 1;
+    padding-left: 3;
+    border-width: 1;
+    -unity-text-align: middle-left;
+}
+
+#new-view-icon {
+    width: 25;
+    height: 25;
+    padding: 1;
+}
+
+#quest-icon {
+    width: 25;
+    height: 25;
+    padding: 2.5;
+}

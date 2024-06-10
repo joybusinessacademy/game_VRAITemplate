@@ -1,0 +1,21 @@
+{
+  "name": "com.skillsvr.character.elle",
+  "version": "1.0.0",
+  "displayName": "SVR: Character Elle",
+  "description": "Elle Character",
+  "unity": "2021.3",
+  "unityRelease": "16f1",
+  "keywords": [
+    "SkillsVR",
+    "SVR",
+    "Enterprise",
+    "Cloud",
+    "Learning"
+  ],
+  "author": {
+    "name": "SkillsVR",
+    "email": "gg@prideandjoy.org",
+    "url": "https://skillsvr.com/"
+  },
+  "documentationUrl": "https://skillsvr-documentation.vercel.app/"
+}

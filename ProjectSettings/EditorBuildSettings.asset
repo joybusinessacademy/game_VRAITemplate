@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Contexts/JX/Scenes/JX.unity
+    guid: d9f853b32d043aa4ba14c1d5e0c97f33
+  - enabled: 1
+    path: Assets/Contexts/JX/Scenes/training.unity
+    guid: 61e31e94b8891454299a776caffebe42
+  - enabled: 1
+    path: Assets/Contexts/JX/Scenes/Test.unity
+    guid: 5b25d12fe0fcb6549824d36e5b33d793
+  - enabled: 1
+    path: Assets/Contexts/JX/Scenes/trianingtest.unity
+    guid: cc5b334dc9f9a36408b4376cad406b57
+  - enabled: 1
+    path: Packages/com.skillsvr.environment.whiteroom/Runtime/Scenes/WhiteRoom.unity
+    guid: 00000000000000000000000000000000
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 62cfb27e6b9eda743a2f5a0aa9e5cd48, type: 2}
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: 388aa9a957fecba4781a233ce9ee6f81, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 9acdc845c6ded094ab30558801471020, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f66656c5365d64a4eaa9614b9d563239, type: 2}

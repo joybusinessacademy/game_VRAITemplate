@@ -1,0 +1,10 @@
+{
+    "registries": [
+        {
+            "name": "CCK Package Registry",
+            "url": "https://api.github.com/repos/joybusinessacademy/CCK_Packages/contents/CCKPackageRegistryJsons/CCKPackageRegistry.json?ref=production",
+            "auth": "Github.x-oauth-basic",
+            "type": "GithubJson"
+        }
+    ]
+}

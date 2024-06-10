@@ -1,0 +1,37 @@
+Breadcrumbs {
+    flex-direction: row;
+    margin: 2;
+    margin-left: 5;
+}
+
+Breadcrumbs > #chevron {
+    align-self: center;
+    height: 16;
+    width: 16;
+    flex-shrink: 0;
+}
+
+Breadcrumbs > Button {
+    margin: 0;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: center;
+    font-size: 14;
+    padding: 5;
+    padding-left: 4;
+    padding-right: 4;
+    -unity-text-align: middle-left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+    min-width: 50;
+}
+
+Breadcrumbs > Button:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+
+Breadcrumbs > Button.current-level {
+    -unity-font-style: bold;
+}

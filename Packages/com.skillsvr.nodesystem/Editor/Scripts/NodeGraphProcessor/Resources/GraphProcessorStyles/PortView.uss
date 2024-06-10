@@ -1,0 +1,74 @@
+PortView.port {
+    height: 24px;
+    align-items: center;
+    padding: 0;
+}
+
+PortView.input {
+    flex-direction: row;
+}
+
+PortView.output {
+    flex-direction: row-reverse;
+}
+
+PortView > #connector.connectorBox {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+    border-width: 0;
+}
+
+PortView > #connector:hover {
+    -unity-background-image-tint-color: black;
+}
+
+PortView > #connector > #cap
+{
+    background-color: #212121;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+PortView > #connector > #cap:hover
+{
+    background-color: #f0f0f0;
+}
+
+.Port_Boolean {
+    --port-color: #ff6d29;
+}
+
+.Port_Single {
+    --port-color: #2080FF;
+}
+
+.Port_Int32 {
+    --port-color: #325dff;
+}
+
+.Port_Object {
+    --port-color: #80FF00;
+}
+
+.Port_String {
+    --port-color: #80FF80;
+}
+
+.Port_GameObject {
+    --port-color: #FF0000;
+}
+
+.Port_Color {
+    --port-color: #FF00FF;
+}
+
+.Vertical
+{
+    height: 6px;
+}

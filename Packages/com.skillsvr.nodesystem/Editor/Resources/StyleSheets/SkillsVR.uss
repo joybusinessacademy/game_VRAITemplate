@@ -1,0 +1,75 @@
+﻿FloatField {
+    min-width: 20;
+}
+
+FloatInputWithTextBox > DropdownField {
+    flex-grow: 1
+}
+
+Toggle > Label {
+    flex-grow: 1;
+}
+
+FloatInputWithTextBox > FloatField {
+    margin-left: 0;
+    min-width: 20;
+}
+
+ScriptableObjectDropdown > DropdownField > .unity-label {
+    min-width: 0;
+}
+
+.unity-base-field > .unity-label {
+    width: 50%;
+    min-width: 0;
+    
+}
+
+Toggle > .unity-toggle__input {
+    flex-grow: 0;
+}
+
+Label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#empty-text {
+    margin: 3;
+    -unity-text-align: upper-center;
+    flex-grow: 1;
+    -unity-font-style: italic;
+}
+
+#subtitle {
+    margin: 3;
+    -unity-text-align: middle-left;
+    flex-grow: 1;
+    -unity-font-style: italic;
+    color: gray;
+}
+
+
+DropdownField > VisualElement {
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+DropdownField > VisualElement > PopupTextElement {
+    text-overflow: ellipsis;
+}
+
+.hidden {
+    display: none;
+}
+
+#tag {
+    background-color: #445d7c;
+    border-radius: 10;
+    padding: 2;
+    padding-left: 5;
+    padding-right: 5;
+    border-width: 0;
+    margin: 2;
+}

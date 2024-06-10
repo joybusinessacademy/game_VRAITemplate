@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce7b5884ab68d240b72ec903d761134, type: 3}
+  m_Name: Socket_Prop
+  m_EditorClassIdentifier: 
+  propDetails:
+    name: Basic Socket Prop
+    description: A basic prop set up to be a socket for the Drag and Drop node.
+  propType:
+    dropPositionChoice: 5
+    typeChoice: 2
+  colliderData:
+    boxCenter: {x: 0.0012812805, y: 0.04738503, z: -0.00049275905}
+    boxSize: {x: 0.055050135, y: 0.06060615, z: 0.06356639}
+  assetDatabaseObjectPath: Assets/Contexts/dragdrop/Assets/Models/Socket_Prop.fbx
+  propPrefab: {fileID: 1322330892521267901, guid: 5da4120d9f793644eba6b4e0e4163d58, type: 3}

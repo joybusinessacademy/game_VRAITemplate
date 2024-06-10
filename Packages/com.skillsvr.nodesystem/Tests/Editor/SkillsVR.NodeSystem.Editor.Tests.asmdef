@@ -1,0 +1,29 @@
+{
+    "name": "SkillsVR.NodeSystem.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1e490402836344040ae30422e000eab7",
+        "GUID:a432eb0a70c5c4a37ab50d59671586f8",
+        "GUID:a19a888fac78e2d4c9f2547c685dc557",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:f871cb297ce36744986cdbe702a92b12",
+        "GUID:d5ee183f4da738c48b88ac73cb856f0e",
+        "GUID:5286395fb8eaa094eba9daffb882a1e0"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

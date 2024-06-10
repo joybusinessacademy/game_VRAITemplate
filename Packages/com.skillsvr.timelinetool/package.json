@@ -1,0 +1,29 @@
+{
+  "name": "com.skillsvr.timelinetool",
+  "version": "1.0.0",
+  "displayName": "Animation Timeline Tool",
+  "description": "Timeline extensions for animator blender and visual timeline line editor.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://jba.atlassian.net/wiki/spaces/PS/pages/1604354049/Animation+Timeline+Tool",
+  "changelogUrl": "https://jba.atlassian.net/wiki/spaces/PS/pages/1604354049/Animation+Timeline+Tool",
+  "licensesUrl": "https://jba.atlassian.net/wiki/spaces/PS/pages/1604354049/Animation+Timeline+Tool",
+  
+ "keywords": [
+    "SkillsVR",
+    "Timeline",
+    "Animation"
+  ],
+  "author": {
+    "name": "SkillsVR",
+    "email": "info@skillsvr.com",
+    "url": "https://www.skillsvr.com"
+  },
+  "samples": [
+        {
+            "displayName": "Timeline Extension Samples",
+            "description": "Timeline Extension Samples",
+            "path": "Samples~/TimelineExtensionSamples"
+        }
+    ]
+}

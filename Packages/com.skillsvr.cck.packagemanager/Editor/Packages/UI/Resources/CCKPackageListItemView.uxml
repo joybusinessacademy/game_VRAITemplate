@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="list-item" style="flex-direction: row; height: 20px; flex-shrink: 1; flex-grow: 0; align-items: center;">
+        <ui:VisualElement name="icon" style="width: 16px; height: 16px; max-width: 16px; min-width: 16px; max-height: 16px; min-height: 16px; background-image: url(&apos;project://database/Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Add%20Binding@3x.png?fileID=2800000&amp;guid=8be1fbf4b24de44c99840805bdae9e40&amp;type=3#Add Binding@3x&apos;);" />
+        <ui:Label text="Package Name" display-tooltip-when-elided="true" name="title" style="flex-shrink: 1; flex-grow: 0; -unity-text-align: middle-left; flex-direction: column; white-space: nowrap;" />
+        <ui:Label text="Version" display-tooltip-when-elided="true" name="version" style="-unity-text-align: middle-left;" />
+        <ui:VisualElement name="install-state-icon" style="width: 16px; height: 16px; max-height: 16px; min-height: 16px; min-width: 16px;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+PropDropdown {
+    flex-grow: 1;
+}
+
+#prop-dropdown {
+    flex-direction: row;
+}
+
+#prop-dropdown > DropdownField {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#prop-dropdown > DropdownField > * {
+    width: 50%;
+}
+
+#prop-dropdown > IconButton.unity-button {
+    margin: 0;
+}

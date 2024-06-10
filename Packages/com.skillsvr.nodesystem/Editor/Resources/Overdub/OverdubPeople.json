@@ -1,0 +1,122 @@
+﻿[
+  {
+    "id": "313da5ea-5aba-4eb6-a1b0-f319fed0a0a7",
+    "status": "active",
+    "is_public": false,
+    "name": "Courtney"
+  },
+  {
+    "id": "ec23398d-423c-4506-8819-07c74ae3904f",
+    "status": "active",
+    "is_public": false,
+    "name": "Lex (Caucasian Female) - Calm"
+  },
+  {
+    "id": "ab36f2d3-fae8-4659-a248-be9166535a10",
+    "status": "active",
+    "is_public": false,
+    "name": "James (Caucasian Male) - Calm"
+  },
+  {
+    "id": "03068071-6b00-4322-83be-1c388998b43b",
+    "status": "active",
+    "is_public": false,
+    "name": "Zihan (East Asian Female) - Calm"
+  },
+  {
+    "id": "5c201cdd-0efc-47c1-bbf0-6bef46c41498",
+    "status": "active",
+    "is_public": false,
+    "name": "James (Caucasian Male) - Angry"
+  },
+  {
+    "id": "0e611aff-e326-4f8d-90d0-c32ca8627656",
+    "status": "active",
+    "is_public": false,
+    "name": "Lex (Caucasian Female) - Angry"
+  },
+  {
+    "id": "109810fb-995f-4a68-aa89-adfd0e4880ba",
+    "status": "active",
+    "is_public": false,
+    "name": "Josh (Maori/Pasifika Male) - Calm"
+  },
+  {
+    "id": "67ccab77-af25-479b-abcb-6a59ed69f213",
+    "status": "active",
+    "is_public": false,
+    "name": "Zihan (East Asian Female) - Angry"
+  },
+  {
+    "id": "4eb69d1e-4e51-47f7-9d9f-442fc863aceb",
+    "status": "active",
+    "is_public": false,
+    "name": "Flavio (South American Male) - Calm"
+  },
+  {
+    "id": "c745dba1-0bd1-4f10-9547-1aa5386888b6",
+    "status": "active",
+    "is_public": false,
+    "name": "Flavio (South American Male) - Angry"
+  },
+  {
+    "id": "d95478f9-36d5-4e5a-a455-4bb159250c46",
+    "status": "active",
+    "is_public": false,
+    "name": "Josh (Maori/Pasifika Male) - Angry"
+  },
+  {
+    "id": "1139699a-d498-4725-b8dd-7d514f2ad1a0",
+    "status": "active",
+    "is_public": true,
+    "name": "Don"
+  },
+  {
+    "id": "38d38b5a-2c42-44b4-8907-ae25e2b742ff",
+    "status": "active",
+    "is_public": true,
+    "name": "Emily"
+  },
+  {
+    "id": "6510c9b3-4ff0-4d09-8741-cca2c23e100f",
+    "status": "active",
+    "is_public": true,
+    "name": "Carla"
+  },
+  {
+    "id": "d9fede39-0047-4875-8297-d2a91a7bd0a5",
+    "status": "active",
+    "is_public": true,
+    "name": "Ruth"
+  },
+  {
+    "id": "75f8b86e-d05d-4862-a228-8d96fdf55258",
+    "status": "active",
+    "is_public": true,
+    "name": "Malcom"
+  },
+  {
+    "id": "996b594a-0258-4f3b-ad94-130558c8fb57",
+    "status": "active",
+    "is_public": true,
+    "name": "Ethan"
+  },
+  {
+    "id": "569fffb0-05a3-48a2-96a3-bf411c376477",
+    "status": "active",
+    "is_public": true,
+    "name": "Henry"
+  },
+  {
+    "id": "eedef7eb-ffd0-44fe-85d4-5987f9a00e37",
+    "status": "active",
+    "is_public": true,
+    "name": "Nancy"
+  },
+  {
+    "id": "8ee93413-bf5c-4f50-9cc5-7ccaee17b117",
+    "status": "active",
+    "is_public": true,
+    "name": "Nicholas"
+  }
+]

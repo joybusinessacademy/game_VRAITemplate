@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="header" style="height: 57px; background-color: rgb(60, 60, 60); border-left-color: rgb(40, 40, 40); border-right-color: rgb(40, 40, 40); border-top-color: rgb(40, 40, 40); border-bottom-color: rgb(40, 40, 40); border-bottom-width: 1px; flex-direction: row; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+        <ui:VisualElement name="icon" style="background-image: resource(&apos;Icon/icon_question_answer&apos;); width: 24px; height: 24px; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" />
+        <ui:VisualElement style="margin-left: 2px; flex-grow: 1;">
+            <ui:TextField picking-mode="Ignore" value="filler text" text="Custom Title" name="name" />
+            <ui:Label text="Node Type" display-tooltip-when-elided="true" name="type" style="-unity-font-style: italic; color: rgb(112, 112, 112); margin-left: 7px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:ScrollView name="content" style="flex-grow: 1;" />
+    <ui:VisualElement name="footer" style="flex-shrink: 0;" />
+</ui:UXML>

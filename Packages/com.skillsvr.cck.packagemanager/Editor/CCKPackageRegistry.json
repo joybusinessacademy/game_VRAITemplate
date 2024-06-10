@@ -1,0 +1,248 @@
+{
+    "name":"com.skillsvr.cck.package.registry",
+    "version": "1.0.0",
+    "url":"",
+    "author": {
+        "name" : "SkillsVR",
+        "url": "skillsvr.com",
+        "email":"info@skillsvr.com"
+    },
+    "flags": [
+        "PkgAuth=Github.x-oauth-basic", 
+        "PkgResolver=Github", 
+        "PreviewResolver=Github", 
+        "GitBranch=development", 
+        "RegistryAuth=Github.x-oauth-basic"
+    ],
+    "packages": [
+	{
+            "displayName": "SVR: CCK Plugins",
+            "name": "com.skillsvr.cck.plugins",
+            "version": "1.0.4",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.cck.plugins",
+            "flags": ["ReloadAfterInstall", "Required", "Order=0", "ExtImportDir=Editor/AutoImportPackages"]
+        },
+        {
+            "displayName": "Skills VR XR Player",
+            "name": "com.joybusinessacademy.jxrpackage",
+            "version": "2.0.0",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/game_JBAXRPlayerPackage",
+            "flags": ["Required", "Order=1"]
+        },
+        {
+            "displayName": "Skills VR Mechanics Package",
+            "name": "com.joybusinessacademy.mechanics",
+            "version": "3.1.0",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/game_VRMechanicsPackage",
+            "flags": ["Required", "Order=3"]
+        },
+        {
+            "displayName": "Skills VR Node System Package",
+            "name": "com.skillsvr.nodesystem",
+            "version": "3.1.0",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/game_VRNodePackage",
+            "flags": ["Required", "Order=4"]
+        },
+        {
+            "displayName": "Skills VR Video Package",
+            "name": "com.skillsvr.svrvideopackage",
+            "version": "2.0.0",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/game_VRVideoSystem",
+            "flags": ["Required", "Order=2"]
+        },
+        {
+            "displayName": "SVR: CCK Package Manager",
+            "name": "com.skillsvr.cck.packagemanager",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.cck.packagemanager",
+            "flags": ["Required", "Order=-1", "AutoUpdate"]
+        },
+        {
+            "displayName": "SVR: Art Essentials",
+            "name": "com.skillsvr.art.essentials",
+            "version": "1.0.2",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.art.essentials",
+            "flags": ["Required", "Order=5", "AutoUpdate"]
+        },
+        {
+            "displayName": "Skills VR Eye and Face Tracking Package",
+            "name": "com.skillsvr.eyeandfacetracking",
+            "version": "1.0.0",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.eyeandfacetracking",
+            "flags": ["Required", "Order=6", "AutoUpdate"]
+        },
+        {
+            "displayName": "SVR: Environment Apartment",
+            "name": "com.skillsvr.environment.apartment",
+            "version": "1.0.5",
+            "description":"environment.apartment",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.apartment",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "apartment",
+                    "displayName": "Apartment",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "description":"environment.apartment",
+                    "url": "Runtime/Scenes/Apartment.unity",
+                    "previews":["Runtime/Scenes/Apartment.png"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Callcenter",
+            "name": "com.skillsvr.environment.callcenter",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.callcenter",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "callcenter",
+                    "displayName": "Call Center",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/Callcenter.unity",
+                    "previews":["Runtime/Scenes/Callcenter.png"]
+                }
+            ]
+        },
+
+        {
+            "displayName": "SVR: Environment Classroom",
+            "name": "com.skillsvr.environment.classroom",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.classroom#production",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "classroom",
+                    "displayName": "Classroom",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/Classroom.unity",
+                    "previews":["Runtime/Scenes/Classroom.PNG"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Bank",
+            "name": "com.skillsvr.environment.cckbank",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.cckbank",
+            "flags": ["Embed", "GitBranch=production"],
+            "assets":[
+                {
+                    "name" : "bank",
+                    "displayName": "Bank",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/CCK_Bank.unity",
+                    "previews":["Runtime/Scenes/CCK_Bank.PNG"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Coffee Shop",
+            "name": "com.skillsvr.environment.coffeeshop",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.coffeeshop",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "coffeeshop",
+                    "displayName": "Coffee Shop",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/CoffeeShop.unity",
+                    "previews":["Runtime/Scenes/CoffeeShop.png"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Fastfood",
+            "name": "com.skillsvr.environment.fastfood",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.fastfood",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "fastfood",
+                    "displayName": "Fastfood",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/Fastfood.unity",
+                    "previews":["Runtime/Scenes/Fastfood.png"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Hospital Operating Room",
+            "name": "com.skillsvr.environment.hospitaloperatingroom",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.hospitaloperatingroom",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "hospitaloperatingroom",
+                    "displayName": "Hospital Operating Room",
+                    "category":"3D/Environment/Hospital",
+                    "type":"scene",
+                    "url": "Runtime/Scene/OperatingRoom.unity",
+                    "previews":["Runtime/Scene/OperatingRoom.png"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Hospital Waiting Area",
+            "name": "com.skillsvr.environment.hospitalwaitingarea",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.hospitalwaitingarea",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "hospitalwaitingarea",
+                    "displayName": "Hospital Waiting Area",
+                    "category":"2D/Environment/Hospital",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/WaitingArea.unity",
+                    "previews":["Runtime/Scenes/WaitingArea.png"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment New Home",
+            "name": "com.skillsvr.environment.newhome",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.newhome",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "newhome",
+                    "displayName": "New Home",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/NewHome.unity",
+                    "previews":["Runtime/Scenes/NewHome.png"]
+                }
+            ]
+        },
+        {
+            "displayName": "SVR: Environment Warehouse",
+            "name": "com.skillsvr.environment.warehouse",
+            "version": "1.0.1",
+            "url": "git+https://github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.environment.warehouse",
+            "flags": ["Embed"],
+            "assets":[
+                {
+                    "name" : "warehouse",
+                    "displayName": "Warehouse",
+                    "category":"3D/Environment/Urban",
+                    "type":"scene",
+                    "url": "Runtime/Scenes/Warehouse.unity",
+                    "previews":["Runtime/Scenes/Warehouse.png"]
+                }
+            ]
+        }
+    ]
+}

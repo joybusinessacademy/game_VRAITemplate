@@ -1,0 +1,73 @@
+#toolbar {
+    flex-direction: row;
+    background-color: #3c3c3c;
+    padding: 3px;
+    border-bottom-color: #282828;
+    border-bottom-width: 1px;
+    height: 33;
+}
+
+#tick-container {
+    width: 16;
+    height: 16;
+    margin-left: 8;
+    margin-right: 11;
+}
+
+#button {
+    flex-direction: row;
+    padding: 4px;
+    background-color: #383838;
+}
+
+#button:hover {
+    background-color: #3f3f3f;
+}
+
+#button.is-open {
+    background-color: #4c4c4c;
+}
+
+#button > Label {
+    font-size: 14px;
+    flex-shrink: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+AssetItemVisualElement {
+    flex-direction: row;
+    padding: 2px;
+    padding-left: 5;
+    background-color: #383838;
+    flex-grow: 1;
+    border-width: 1;
+    border-radius: 4;
+    border-color: #383838;
+    min-height: 24;
+    align-items: center;
+}
+
+AssetItemVisualElement > Label {
+    margin-left: 1;
+}
+
+AssetItemVisualElement > TextField {
+    margin: 0;
+}
+
+AssetItemVisualElement:focus {
+    border-color: #7dd1f7;
+}
+
+AssetItemVisualElement:hover {
+    background-color: #494949;
+}
+
+AssetItemVisualElement.selected {
+    background-color: #455E7D;
+}
+
+AssetItemVisualElement.selected:hover {
+    background-color: #4C6F8F;
+}

@@ -1,0 +1,55 @@
+AudioSelector {
+    padding: 2;
+    margin: 4;
+    border-radius: 5;
+    background-color: #3f3f3f;
+    height: 24;
+    min-height: 24;
+}
+
+AudioSelector > VisualElement {
+    flex-direction: row;
+}
+
+AssetDropdown {
+    flex-grow: 1;
+}
+
+#play-pause-button {
+    margin: 2;
+    width: 16;
+    height: 16;
+    padding: 0;
+    margin-left: 0;
+}
+
+#play-pause-button > Icon {
+    
+}
+
+
+#unity-tracker:hover {
+    height: 2;
+}
+
+#unity-dragger:hover {
+    
+}
+
+#unity-dragger-border {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#volume-container {
+    height:  1;
+    position: absolute;
+    bottom: 0;
+    left: 4;
+    right: 4;
+}
+
+#volume-bar {
+    height:  1;
+    background-color: #7f7f7f;
+    bottom: 0;
+}

@@ -1,0 +1,33 @@
+{
+    "name": "NodeAssemblyDefinitionRuntime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:cf830ad1f2997964dbd03b9c932ff441",
+        "GUID:ac97fc41360e5cb47b78d39afe435d66",
+        "GUID:23d95e0971f536a4595776a1acf2130e",
+        "GUID:df6e0f306e07bea40be4f6427ea811de",
+        "GUID:f06555f75b070af458a003d92f9efb00",
+        "GUID:fe685ec1767f73d42b749ea8045bfe43",
+        "GUID:ad7c259d5cf74dc4aa68964d8f7c3b04",
+        "GUID:44ad0b6018229464c880caf18d4a09c2",
+        "GUID:162cb25bd86e852429848303abd8b4c9",
+        "GUID:561b9a51faebb23488ddd0d34e616ab6",
+        "GUID:781d3f72e45b2ed46b35a96cb2736482",
+        "GUID:7213bc445b8a9d3488857f3c069b0b2e",
+        "GUID:502e28d01b3ebaf4689df96d8655467c",
+        "GUID:4af21795022437d4bb139a86514b9ff9",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:65a004a26c89ac5468e8d4b4b057f1c8",
+        "GUID:acb9a7c86acad294ab204e001b6a039d",
+        "GUID:1452dbb162b6828468488d55957af2a9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

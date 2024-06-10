@@ -1,0 +1,8 @@
+SwitchNodeView {
+    min-width: 0;
+}
+
+.unity-label {
+    flex-grow: 0;
+    min-width: 10;
+}

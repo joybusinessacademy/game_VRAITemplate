@@ -1,0 +1,11 @@
+﻿#inspector-selected-item {
+    position: absolute;
+    left: -2;
+    right: -2;
+    top: -2;
+    bottom: -2;
+    
+    border-width: 2;
+    border-color: #ffffff;
+    border-radius: 12;
+}

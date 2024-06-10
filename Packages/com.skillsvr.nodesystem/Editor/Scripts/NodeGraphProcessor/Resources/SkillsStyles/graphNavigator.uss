@@ -1,0 +1,118 @@
+#toolbar {
+    flex-direction: row;
+    background-color: #3c3c3c;
+    padding: 3px;
+    border-bottom-color: #282828;
+    border-bottom-width: 1px;
+    height: 33;
+}
+
+#build-button {
+    margin-left: 8;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#build-dropdown {
+    padding: 0;
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    justify-content: center;
+    border-left-width: 0;
+}
+
+#build-dropdown > Image {
+    width: 11;
+    height: 7;
+    margin: 3;
+}
+
+#current-project-button {
+    padding: 4;
+    margin-left: 7;
+    flex-direction: row;
+}
+
+#current-project-button > Image {
+    width: 11px;
+    height: 6px;
+    align-self: center;
+    margin: 2;
+}
+
+#project-tick-container {
+    width: 16;
+    height: 16;
+    margin-right: 11;
+    align-self: center;
+}
+
+#project {
+    flex-direction: row;
+    background-color: #3c3c3c;
+    padding: 4px;
+    border-bottom-color: #282828;
+    border-bottom-width: 1px;
+    padding-left: 12;
+}
+
+#project.unity-disabled > VisualElement > Label {
+    -unity-font-style: italic;
+}
+
+#no-scenes-label {
+    -unity-font-style: italic;
+    margin-left: 12;
+    margin-top: 4;
+    color: #7e7e7e;
+}
+
+#project.unity-disabled:hover {
+    background-color: #3a3a3a;
+}
+
+#project:hover {
+    background-color: #4c4c4c;
+}
+
+#project-button {
+    flex-direction: row;
+    align-items: center;
+}
+
+#project-button > Label {
+    font-size: 19px;
+    -unity-font-style: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#tick-container {
+    width: 16;
+    height: 16;
+    margin-left: 8;
+    margin-right: 11;
+}
+
+#scene-button {
+    flex-direction: row;
+    padding: 4px;
+    background-color: #383838;
+}
+
+#scene-button:hover {
+    background-color: #3f3f3f;
+}
+
+#scene-button.is-open {
+    background-color: #4c4c4c;
+}
+
+#scene-button > Label {
+    font-size: 14px;
+    flex-shrink: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

@@ -1,0 +1,17 @@
+ScriptableObjectDropdown {
+    flex-direction: row;
+}
+
+ScriptableObjectDropdown > DropdownField {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+ScriptableObjectDropdown > IconButton.unity-button {
+    margin: 0;
+}
+
+.hidden {
+    max-height: 0;
+    max-width: 0;
+}

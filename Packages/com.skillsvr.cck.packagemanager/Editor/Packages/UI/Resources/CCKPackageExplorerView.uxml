@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="package-manager-view" style="flex-grow: 1; flex-direction: row; display: flex;">
+        <ui:VisualElement name="left" style="max-width: 500px; min-width: 300px; flex-grow: 1;">
+            <SkillsVR.CCK.PackageManager.UI.Views.CCKPackageListView focusable="true" name="package-list-view" virtualization-method="DynamicHeight" style="flex-grow: 1; display: flex;" />
+        </ui:VisualElement>
+        <SkillsVR.CCK.PackageManager.UI.Views.Splitter name="body-splitter" style="width: 2px; max-width: 2px; min-width: 2px; background-color: rgb(43, 43, 43); flex-grow: 1;" />
+        <ui:VisualElement name="right" style="flex-grow: 1; width: auto; flex-direction: column; min-width: 500px; flex-shrink: 0; max-width: 1600px;">
+            <SkillsVR.CCK.PackageManager.UI.Views.CCKPackageView name="package-view" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

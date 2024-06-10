@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="toolbar" style="border-bottom-width: 1px; border-left-color: rgb(40, 40, 40); border-right-color: rgb(40, 40, 40); border-top-color: rgb(40, 40, 40); border-bottom-color: rgb(40, 40, 40); background-color: rgb(60, 60, 60); flex-direction: row; height: 33px; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px;" />
+    <ui:VisualElement name="content" style="flex-grow: 1; flex-direction: row;">
+        <ui:ScrollView name="projects" style="border-left-color: rgb(40, 40, 40); border-right-color: rgb(40, 40, 40); border-top-color: rgb(40, 40, 40); border-bottom-color: rgb(40, 40, 40); border-right-width: 1px; width: 15%;" />
+        <ui:ScrollView name="types" style="border-right-width: 1px; border-left-color: rgb(40, 40, 40); border-right-color: rgb(40, 40, 40); border-top-color: rgb(40, 40, 40); border-bottom-color: rgb(40, 40, 40); width: 15%;" />
+        <ui:ScrollView name="assets" style="border-right-width: 1px; border-left-color: rgb(40, 40, 40); border-right-color: rgb(40, 40, 40); border-top-color: rgb(40, 40, 40); border-bottom-color: rgb(40, 40, 40); width: 15%;" />
+        <SkillsVRNodes.Scripts.CustomWindows.AssetPreviewVisualElement style="width: 50%; flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

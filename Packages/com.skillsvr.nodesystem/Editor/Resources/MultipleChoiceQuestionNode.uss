@@ -1,0 +1,3 @@
+#controls > VisualElement > * {
+flex-grow: 1;
+}

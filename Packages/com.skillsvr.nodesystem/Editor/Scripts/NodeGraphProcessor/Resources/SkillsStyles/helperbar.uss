@@ -1,0 +1,69 @@
+#helperbar
+{
+    background-color: #393939;
+    flex-direction: column;
+    border-bottom-width: 1;
+    border-color: rgb(27, 27, 27);
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    margin-left: 0%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+#barContainer
+{
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#zoomContainer
+{
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#iconButton
+{
+    min-width: 24;
+    min-height: 24;
+    max-width: 24;
+    max-height: 24;
+    border-width: 0;
+    padding: 3;
+    margin: 3;
+}
+
+#textButton
+{
+    border-width: 0;
+    margin: 3;
+    font-size: 16;
+}
+
+.hide
+{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 0;
+    max-height: 0;
+}
+
+#iconButton.hide
+{
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 0;
+    max-height: 0;
+    padding-right: 0;
+}

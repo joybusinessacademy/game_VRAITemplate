@@ -1,0 +1,26 @@
+
+
+
+
+AdvancedDropdown > Button.unity-text-element {
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #282828;
+    border-radius: 0;
+}
+
+
+AdvancedDropdown > .collapsed {
+    margin-bottom: 0;
+}
+
+AdvancedDropdown > Button > Image {
+    max-width: 16;
+    max-height: 16;
+}
+
+AdvancedDropdown > Button > Label {
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+}

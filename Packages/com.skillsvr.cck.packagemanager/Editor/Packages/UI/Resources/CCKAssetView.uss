@@ -1,0 +1,32 @@
+#display-name {
+    text-overflow: ellipsis;
+    -unity-text-overflow-position: end;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+#author-name {
+    text-overflow: ellipsis;
+    -unity-text-overflow-position: end;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    color: rgb(130, 130, 130);
+}
+
+#preview-image {
+    width: 215px;
+    height: 140px;
+}
+
+#icon-install {
+    width: 20px;
+    height: 20px;
+}
+
+#button-install {
+    background-color: clear;
+    border-color: clear;
+    color: deepskyblue;
+}

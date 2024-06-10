@@ -1,0 +1,41 @@
+LogicGroupView.scope.group {
+    min-height: 300;
+    min-width: 500;
+}
+
+#headerColorPicker {
+    position: absolute;
+    margin: 8px;
+    width: 50px;
+}
+
+#titleContainer > #titleLabel, #titleContainer > #titleField {
+    margin-left: 55px;
+}
+
+#headerContainer
+{
+    height: 79px;
+    background-color: rgba(77, 62, 98, 0.72);
+}
+
+ExitGroupNodeView.graphElement.node.expanded {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    align-items: Auto;
+}
+
+#contentContainerPlaceholder {
+    flex-grow: 1;
+}
+
+TemplateContainer {
+    flex-grow: 1;
+}
+
+#centralContainer {
+    flex-grow: 1;
+}
+
+

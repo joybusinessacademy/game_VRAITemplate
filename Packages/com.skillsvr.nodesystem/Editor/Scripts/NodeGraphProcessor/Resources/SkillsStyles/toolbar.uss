@@ -1,0 +1,140 @@
+#toolbar
+{
+    background-color: #393939;
+    flex-direction: column;
+    border-bottom-width: 1;
+    border-color: rgb(27, 27, 27);
+}
+
+#barContainer
+{
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#tooltipContainer
+{
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    background-color: #282828;
+    color: #7FD6FC;
+}
+
+#tooltipContainer > label {
+    text-align: center; /* Centers the text inside the label */
+}
+
+#leftContainer {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#middleContainer
+{
+    flex-direction: row;
+    flex-grow: 1;
+    -unity-text-align: middle-center;
+    justify-content: center;
+}
+
+#rightContainer
+{
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    flex-shrink: 0;
+}
+
+#rightContainer > * {
+    flex-shrink: 0;
+}
+
+#iconButton
+{
+    min-width: 24;
+    min-height: 24;
+    max-width: 24;
+    max-height: 24;
+    border-width: 0;
+    padding: 3;
+    margin: 3;
+}
+
+#textButton
+{
+    border-width: 0;
+    margin: 3;
+    font-size: 16;
+}
+
+#jumpto-project-button {
+    padding: 4;
+    margin-left: 7;
+    flex-direction: row;
+}
+
+#jumpto-project-button > Image {
+    width: 11px;
+    height: 6px;
+    align-self: center;
+    margin: 2;
+}
+
+#graphsPath
+{
+    flex-direction: row-reverse;
+    margin: 3;
+    border-radius: 6;
+    overflow: hidden;
+}
+
+#graphsPath > #textButton
+{
+    margin: 0;
+    border-radius: 0;
+}
+
+#debug-dropdown {
+    padding: 0;
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    justify-content: center;
+}
+
+#debug-dropdown > Image {
+    width: 11;
+    height: 7;
+    margin: 3;
+}
+
+.hide
+{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 0;
+    max-height: 0;
+}
+
+#iconButton.hide
+{
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 0;
+    max-height: 0;
+    padding-right: 0;
+}
