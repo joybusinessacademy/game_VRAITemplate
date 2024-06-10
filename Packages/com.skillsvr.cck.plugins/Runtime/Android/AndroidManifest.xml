@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.skillsvr.cck" xmlns:tools="http://schemas.android.com/tools">
+    
+    <!--<uses-sdk android:minSdkVersion="26"/>-->
+  <uses-feature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true" />
+    <application tools:replace="android:allowBackup" android:allowBackup="false">
+        <meta-data android:name="com.oculus.vr.focusaware" android:value="true" />
+        <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="false" />
+        <meta-data android:name="com.skillsvr.cck" android:value="vr_only"/>
+      <activity
+          android:screenOrientation="landscape"
+          android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+          android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+          android:launchMode="singleTask"
+          android:resizeableActivity="false"
+          android:name="com.unity3d.player.UnityPlayerActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN"/>
+          <category android:name="android.intent.category.LAUNCHER" />
+          <category android:name="android.intent.category.INFO"/>
+          <category android:name="com.oculus.intent.category.VR"/>
+        </intent-filter>
+      </activity>
+      <!--<meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />-->
+      <meta-data android:name="com.samsung.android.vr.application.mode" android:value="vr_only" />
+      <meta-data android:name="com.oculus.supportedDevices" android:value="quest2|questpro"/>
+      <meta-data android:name="picovr.software.eye_tracking" android:value="false/true" />
+      <meta-data android:name="picovr.software.face_tracking" android:value="false/true" />
+    </application>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-feature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true" />
+  <uses-feature android:name="com.oculus.software.body_tracking" android:required="false" />
+  <uses-permission android:name="com.oculus.permission.BODY_TRACKING" />
+  <uses-feature android:name="oculus.software.face_tracking" android:required="true" />
+  <uses-permission android:name="com.oculus.permission.FACE_TRACKING" />
+  <uses-feature android:name="oculus.software.eye_tracking" android:required="true" />
+  <uses-permission android:name="com.oculus.permission.EYE_TRACKING" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="com.picovr.permission.EYE_TRACKING"/>
+  <uses-feature android:name="picovr.software.eye_tracking" android:required="true" />
+  <uses-permission android:name="com.picovr.permission.FACE_TRACKING"/>
+  <uses-feature android:name="picovr.software.face_tracking" android:required="true" />
+  <uses-permission android:name="android.permission.CAMERA" />
+</manifest>

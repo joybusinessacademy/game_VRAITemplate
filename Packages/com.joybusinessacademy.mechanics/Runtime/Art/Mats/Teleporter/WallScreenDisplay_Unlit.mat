@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4450329571926671519
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WallScreenDisplay_Unlit
+  m_Shader: {fileID: -6465566751694194690, guid: f1f5849822d5fcb489bda64e7d127c78, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_88A5865B:
+        m_Texture: {fileID: 2800000, guid: ae529a344d3c35a4480d730bb76d87bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B69E8D88:
+        m_Texture: {fileID: 2800000, guid: 0be2658ebc290024382946c2cf0efabd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D92F04E9:
+        m_Texture: {fileID: 2800000, guid: 8b70d4cf463322940bb88a97c078f1ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F33B2F4D:
+        m_Texture: {fileID: 2800000, guid: 8e59d493546846f4581f7c815d657a29, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5053D2A7_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_97877956_Out_0:
+        m_Texture: {fileID: 2800000, guid: ae529a344d3c35a4480d730bb76d87bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Vector1_3CBC6C84: 4.52
+    - Vector1_400A304B: 13.2
+    - Vector1_479139F: 0.18
+    - Vector1_8DA79665: 0
+    - Vector1_9739EB37: 0
+    - Vector1_A18A47AA: 0.22
+    - _Darken: 0
+    - _Intensity: 0.1
+    - _LighIntensity: 1.81
+    m_Colors:
+    - Color_CEAD92B7: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 0}
+    - Vector2_377EA985: {r: 4, g: 1, b: 0, a: 0}
+    - Vector2_DD47761D: {r: 0, g: 0, b: 0, a: 0}
+    - _Speed: {r: 0.2, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

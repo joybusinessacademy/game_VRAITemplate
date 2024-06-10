@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.joybusinessacademy.jxrpackage": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/game_JBAXRPlayerPackage#production",
-    "com.joybusinessacademy.mechanics": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/game_VRMechanicsPackage#production",
-    "com.skillsvr.art.essentials": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.art.essentials#production",
-    "com.skillsvr.cck.plugins": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.cck.plugins#production",
-    "com.skillsvr.eyeandfacetracking": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/com.skillsvr.eyeandfacetracking#production",
-    "com.skillsvr.nodesystem": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/game_VRNodePackage#production",
-    "com.skillsvr.svrvideopackage": "git+https://x-oauth-basic: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@github.com/joybusinessacademy/CCK_Packages.git?path=/game_VRVideoSystem#production",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "3.7.5",

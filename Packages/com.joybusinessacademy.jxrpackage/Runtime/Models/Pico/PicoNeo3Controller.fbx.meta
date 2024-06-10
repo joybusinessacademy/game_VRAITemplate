@@ -1,0 +1,1060 @@
+fileFormatVersion: 2
+guid: 3bb27e9c5d3100f4c958abd19128dd93
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -4451083978554119138
+    second: PicoNeo3_Controller_Body|PicoNeo3_Anim
+  - first:
+      74: -4537027684826057747
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: 4268024132913301342
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: -2914154681602655856
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: 2105655410934845643
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 724788751160721398
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: -7517722989527839580
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: -9125629171997009026
+    second: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: 8850351923670299121
+    second: PicoNeo3_Controller_Grip|PicoNeo3_Anim
+  - first:
+      74: -2815566513335557845
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: -2946405812840798590
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: -4901741195767668975
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: 5764841712346907437
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 1451812806266874443
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: 2428192389330679398
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: -6683797854621623024
+    second: PicoNeo3_Controller_Grip|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: -3680881754426652385
+    second: PicoNeo3_Controller_Joystick|PicoNeo3_Anim
+  - first:
+      74: -8385521133652234031
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: -5453573785427031681
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: -2381996695344466345
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: -1627040296702858769
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 3102697347555509660
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: 4169391334665774150
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: 1594530453267241006
+    second: PicoNeo3_Controller_Joystick|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: -7829192711687203092
+    second: PicoNeo3_Controller_Pico|PicoNeo3_Anim
+  - first:
+      74: -363884324126180934
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: -6363741313372192141
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: -6693550072905601274
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: -5384643077592492520
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 4921915293252519208
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: -3421304663151502914
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: 4805337958038709010
+    second: PicoNeo3_Controller_Pico|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: -4407259400057584192
+    second: PicoNeo3_Controller_Back|PicoNeo3_Anim
+  - first:
+      74: 3842285418341165835
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: 1024819861546155292
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: -2662379924815531490
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: -3693975685912616795
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: -6576564066706228415
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: -1871168949968426852
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: 5362145733603846962
+    second: PicoNeo3_Controller_Back|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: -5010108391675793574
+    second: PicoNeo3_Controller_Button2|PicoNeo3_Anim
+  - first:
+      74: 8402696895937032506
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: 8365271235118411506
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: 2353394256915730603
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: 5721422542276429995
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 1369878560671798582
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: -865281224184810569
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: -7855785022734187648
+    second: PicoNeo3_Controller_Button2|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: -8795633766552360642
+    second: PicoNeo3_Controller_Button1|PicoNeo3_Anim
+  - first:
+      74: -6453317428345936092
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: 266821429048398736
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: 5867417337419432799
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: 3651810483057564839
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 11668822103779185
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: -4700770963985765032
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: 8619655585110013033
+    second: PicoNeo3_Controller_Button1|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: 6353159525918212067
+    second: PicoNeo3_Controller_Trigger|PicoNeo3_Anim
+  - first:
+      74: -8889665351631857719
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_BackAction
+  - first:
+      74: -4185648317754454221
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_Button1Action
+  - first:
+      74: -5378716135525717078
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_Button2Action
+  - first:
+      74: -2675156529997440545
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_GripAction
+  - first:
+      74: 5741981039185403001
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_JoystickAction
+  - first:
+      74: -8183028022572364014
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_PicoAction
+  - first:
+      74: -7494049187966757394
+    second: PicoNeo3_Controller_Trigger|R_PicoNeo3_Controller_TriggerAction
+  - first:
+      74: 7102983609146259034
+    second: PicoNeo3_Button02
+  - first:
+      74: 2133397233204068686
+    second: PicoNeo3_Button01
+  - first:
+      74: -1251361365281985044
+    second: PicoNeo3_Pico
+  - first:
+      74: -1925435555084969839
+    second: PicoNeo3_Back
+  - first:
+      74: 5323470781327241831
+    second: PicoNeo3_Grip
+  - first:
+      74: -7535827705184169112
+    second: PicoNeo3_Trigger
+  - first:
+      74: -6218314088828942649
+    second: PicoNeo3_Left
+  - first:
+      74: 7799487371470329737
+    second: PicoNeo3_Right
+  - first:
+      74: -1399965005386412438
+    second: PicoNeo3_Up
+  - first:
+      74: 6246744659079874213
+    second: PicoNeo3_Down
+  - first:
+      74: 5038252774873106282
+    second: PicoNeo3_DownLeft
+  - first:
+      74: -8132707810456405006
+    second: PicoNeo3_UpLeft
+  - first:
+      74: 8862447762545109709
+    second: PicoNeo3_UpRight
+  - first:
+      74: 4910018125541905614
+    second: PicoNeo3_DownRight
+  - first:
+      74: 1497421485644679242
+    second: PicoNeo3
+  - first:
+      74: 1497421485644679242
+    second: PicoNeo3_StickPress
+  - first:
+      74: 5772900865633379910
+    second: PicoNeo3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_Palette
+    second: {fileID: 2100000, guid: 37bdf6e7264ea2e469992c7c356c64aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_PicoNeo3
+    second: {fileID: 2100000, guid: c0527ea694dbf7e4d8c3e6e04010a360, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_Table_MediumRect
+    second: {fileID: 2100000, guid: 26f05ff75c60035408ad7f56888e1678, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties:
+    - '#BAKERY{"meshName":["Table_MediumRect_Legs","Table_MediumRect_Top"],"padding":[181,62]}'
+    clipAnimations:
+    - serializedVersion: 16
+      name: PicoNeo3_Button02
+      takeName: PicoNeo3_Controller_Body|R_PicoNeo3_Controller_BackAction
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_Button01
+      takeName: Scene
+      internalID: 0
+      firstFrame: 3
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_Pico
+      takeName: Scene
+      internalID: 0
+      firstFrame: 5
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_Back
+      takeName: Scene
+      internalID: 0
+      firstFrame: 7
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_Grip
+      takeName: Scene
+      internalID: 0
+      firstFrame: 9
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PicoNeo3_Trigger
+      takeName: Scene
+      internalID: 0
+      firstFrame: 11
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 0
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_Left
+      takeName: Scene
+      internalID: 0
+      firstFrame: 13
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PicoNeo3_Right
+      takeName: Scene
+      internalID: 0
+      firstFrame: 15
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PicoNeo3_Up
+      takeName: Scene
+      internalID: 0
+      firstFrame: 17
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PicoNeo3_Down
+      takeName: Scene
+      internalID: 0
+      firstFrame: 19
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PicoNeo3_DownLeft
+      takeName: Scene
+      internalID: 0
+      firstFrame: 21
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_UpLeft
+      takeName: Scene
+      internalID: 0
+      firstFrame: 23
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_UpRight
+      takeName: Scene
+      internalID: 0
+      firstFrame: 25
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_DownRight
+      takeName: Scene
+      internalID: 0
+      firstFrame: 27
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3_StickPress
+      takeName: Scene
+      internalID: 0
+      firstFrame: 29
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PicoNeo3_Controller_Back
+        weight: 0
+      - path: PicoNeo3_Controller_Body
+        weight: 0
+      - path: PicoNeo3_Controller_Button1
+        weight: 0
+      - path: PicoNeo3_Controller_Button2
+        weight: 0
+      - path: PicoNeo3_Controller_Button3
+        weight: 0
+      - path: PicoNeo3_Controller_Button4
+        weight: 0
+      - path: PicoNeo3_Controller_Grip
+        weight: 0
+      - path: PicoNeo3_Controller_Joystick
+        weight: 1
+      - path: PicoNeo3_Controller_Pico
+        weight: 0
+      - path: PicoNeo3_Controller_PicoFlip
+        weight: 0
+      - path: PicoNeo3_Controller_Trigger
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PicoNeo3
+      takeName: Scene
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 1
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

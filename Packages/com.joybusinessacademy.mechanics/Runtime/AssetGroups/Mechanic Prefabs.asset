@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Mechanic Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Mechanic Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0baa4490c58fa3f43a8358609d54fb9f
+  m_SerializeEntries:
+  - m_GUID: 36b78b383d3c755479076394cb4abe1b
+    m_Address: QuestionChoiceButton_ALT
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e0cb7a5c510e3e24d99b1f26c6b2048f
+    m_Address: Slide_PresetAll
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c1f638025b7507b458c97fadb67a1225
+    m_Address: Slide - TextFieldOnly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 56d48bd162a96e444ab5266ad72e9908
+    m_Address: Slide - MultiMedia - Text Only
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dc61de8fb44a75e46898cb85996d2f03
+    m_Address: Slide - MultiMedia - With Image
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 35431df272764b94885d767c62c48cc9
+    m_Address: GenericButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4ffd6dc4138c9bf4f8b3f809ea83c736
+    m_Address: GestureTemplateDeepBreath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GestureTemplate
+  - m_GUID: 5b2407bf3c073c144b2f603bf6d1404f
+    m_Address: QuestionChoiceButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c43ef1717fa67084aa6656a4c58d10e0
+    m_Address: MultipleChoiceQuestionSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f5a2941a81713a2479282a6eb2d074b6
+    m_Address: RankOrderInit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1bf53ff8e86a90a4db0872e52cd9380e
+    m_Address: Marker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3f3f0e4ccc8e90e4dab9cc74b599317c
+    m_Address: DeepBreath1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 667772cb8bc249444bcc18c1d463490d
+    m_Address: GestureDetectionMechanic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 30ee30783ad6fab4586486dae0b7fad6
+    m_Address: GestureTemplateDeepBreathInRange
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GestureTemplate
+  - m_GUID: e8d42b4a7e9f5f44787f0a5d59b47a0d
+    m_Address: GestureVisualizerRanged
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 77437ac5f650fd6438f7afadd50f3181
+    m_Address: AudioPlaybackSystem_UI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 828b062b743596346aa611549d1b6e89
+    m_Address: AudioPlaybackSystem_SystemOnly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a61c8f1ce4f654b458c4df01cc1de5fa
+    m_Address: AudioRecorderSystem_SystemOnly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 028c67a29e2d82440b54415c2cd9152e
+    m_Address: AudioRecorderSystem_UI_Default_V1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f9bf72f5b3479e24ba7bad94db4ae5e3
+    m_Address: AudioRecorderSystem_UI_NoPlayback
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 00be7fb9b23f3594cad56d1116168d90
+    m_Address: AudioRecorderSystem_UI_Playback
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 39c060609a702e14395e5c035076f712
+    m_Address: AudioRecorderSystem_UI_Playback_MCQ
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3c99768814e675a48872ab86800ff544
+    m_Address: InformationPopUpSystem_ALT
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b5d3839516260a547b0a3deb2863a370
+    m_Address: MultipleChoiceQuestionSystem_ALT
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 71ccd3ca916a29c4bbe98a501b84c3b7
+    m_Address: MarkerQuestionSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7b18d1a79a07a3d4799eb6ba58613f6b
+    m_Address: RankOrderQuestionSystem_ALT
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0e3df3bec7d927b4bb8ba82ae8efba0f
+    m_Address: TeleportSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 693ac5849b5d09f4181a97b20277542f
+    m_Address: TimerSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b3c609ddc6f2803479ec84d648145913
+    m_Address: PanelVideoSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2c2a2aa81089bb54ca803bd023f44613
+    m_Address: PanoImageSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f2d9fb8dafe54a4f9f741ad77c204c2
+    m_Address: InformationPopUpSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7f7c38739ae97e34fa6621fc2a4916a9
+    m_Address: RankOrderQuestionSystem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c84f94163920a3844b1ad3f9577c0f31, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bbe5b81f7c3a66c45a12c411aaec540b, type: 2}
+    - {fileID: 11400000, guid: dfde8e1dd5f54a34fb629ce670c492dd, type: 2}

@@ -1,0 +1,20 @@
+{
+    "name": "I2.Localization.Editor",
+    "references": [
+        "I2.Localization",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "I2_LOCALIZATION"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

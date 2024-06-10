@@ -1,0 +1,95 @@
+{
+    "gesture": {
+        "id": "DeepBreath",
+        "bodyParts": [
+            {
+                "id": "Head",
+                "position": {
+                    "x": 0.0,
+                    "y": 1.7000000476837159,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "id": "RightHand",
+                "position": {
+                    "x": -0.10000000149011612,
+                    "y": 1.2999999523162842,
+                    "z": 0.10000000149011612
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "id": "LeftHand",
+                "position": {
+                    "x": 0.5,
+                    "y": 1.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        ]
+    },
+    "detector": {
+        "detectionStepDatas": [
+            {
+                "detectorName": "WorldToBodySpaceRangeDetector",
+                "defaultResult": true,
+                "detectorData": {
+                    "id": 0
+                }
+            }
+        ]
+    },
+    "references": {
+        "version": 1,
+        "00000000": {
+            "type": {
+                "class": "WorldToBodySpaceRangeComparisionData",
+                "ns": "VRMechanics.Mechanics.GestureDetection.StepDetectors",
+                "asm": "MechanicsAssemblyDefinition"
+            },
+            "data": {
+                "targetId": "RightHand",
+                "anchorSpaceRanges": [
+                    {
+                        "axis": 1,
+                        "min": -0.699999988079071,
+                        "max": 0.0
+                    },
+                    {
+                        "axis": 2,
+                        "min": 0.8999999761581421,
+                        "max": 1.5
+                    },
+                    {
+                        "axis": 4,
+                        "min": 0.0,
+                        "max": 0.699999988079071
+                    }
+                ]
+            }
+        },
+        "00000001": {
+            "type": {
+                "class": "Terminus",
+                "ns": "UnityEngine.DMAT",
+                "asm": "FAKE_ASM"
+            },
+            "data": {}
+        }
+    }
+}

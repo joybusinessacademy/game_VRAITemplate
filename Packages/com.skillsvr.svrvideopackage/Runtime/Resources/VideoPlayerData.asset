@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5979d5d4a5f1436439220fc1e2835557, type: 3}
+  m_Name: VideoPlayerData
+  m_EditorClassIdentifier: 
+  videoLocationType: 4
+  videoRenderAlternateTexture: {fileID: 8400000, guid: beef4dc103b640c43a26757d229833e7, type: 2}
+  settings:
+  - name: AVPro
+    videoSkyboxMaterial: {fileID: 2100000, guid: 720e47ddd12f49442b68173361cdbd92, type: 2}
+    videoRenderTexture: {fileID: 8400000, guid: 6ac748d0c40e9dd429a6c8b1784539a8, type: 2}
+    sphereVideoPrefab: {fileID: 198420, guid: 5a12218ea7e5b7a4e8b89d25e07d237d, type: 3}
+    virtualNorthAlignment: 0
+  - name: VideoPlayer
+    videoSkyboxMaterial: {fileID: 2100000, guid: c6b70ff2656c24f46b879fc7b844cd47, type: 2}
+    videoRenderTexture: {fileID: 8400000, guid: 6ac748d0c40e9dd429a6c8b1784539a8, type: 2}
+    sphereVideoPrefab: {fileID: 0}
+    virtualNorthAlignment: 100

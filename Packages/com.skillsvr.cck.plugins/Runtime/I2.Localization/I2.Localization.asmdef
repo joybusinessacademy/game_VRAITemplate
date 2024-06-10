@@ -1,0 +1,17 @@
+{
+    "name": "I2.Localization",
+    "references": [
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "I2_LOCALIZATION"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

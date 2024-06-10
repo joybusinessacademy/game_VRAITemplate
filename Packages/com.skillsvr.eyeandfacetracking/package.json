@@ -1,0 +1,24 @@
+{
+  "name": "com.skillsvr.eyeandfacetracking",
+  "version": "1.0.0",
+  "displayName": "Skills VR Eye and Face Tracking Package",
+  "description": "Includes all the  Eye and Face Tracking System Requirements for Mechanics Package",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "dependencies": {
+  },
+  "keywords": [
+  ],
+  "author": {
+    "name": "SkillsVR",
+    "email": "gg@skillsvr.com",
+    "url": "https://skillsvr.com/"
+  },
+  "samples": [
+    {
+      "displayName": "Graph Data Validation Sample",
+      "description": "Contains sample scenes to test data validation with invalid nodes.",
+      "path": "Samples~/DataValidationSample"
+    }
+  ]
+}

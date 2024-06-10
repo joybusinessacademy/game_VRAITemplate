@@ -1,0 +1,15 @@
+{
+    "name": "JBAXRPlayerPackageExample",
+    "references": [
+        "GUID:c200129dfe39e5b4d834811d6a2ad4fc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

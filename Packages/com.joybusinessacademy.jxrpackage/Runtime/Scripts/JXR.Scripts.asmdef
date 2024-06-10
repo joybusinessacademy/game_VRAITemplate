@@ -1,0 +1,30 @@
+{
+    "name": "JR.Scripts",
+    "rootNamespace": "",
+    "references": [
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.XR.Interaction.Toolkit",
+        "HighlightPlus",
+        "Unity.TextMeshPro",
+        "PhotonUnityNetworking",
+        "PhotonRealtime",
+        "Unity.XR.PicoXR",
+        "PhotonVoice",
+        "PhotonVoice.PUN",
+        "PhotonVoice.API",
+        "Unity.XR.CoreUtils",
+        "SkillsVRMessengerSystem",
+        "SkillsVRMessengerSystemRuntime",
+        "Oculus.VR",
+        "Unity.XR.PICO"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

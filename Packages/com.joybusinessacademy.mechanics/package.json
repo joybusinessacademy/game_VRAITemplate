@@ -1,0 +1,14 @@
+{
+  "name": "com.joybusinessacademy.mechanics",
+  "version": "5.0.0",
+  "displayName": "Skills VR Mechanics Package",
+  "description": "Includes the Mechanics for our games",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "keywords": [],
+  "author": {
+    "name": "JBA",
+    "email": "gg@prideandjoy.org",
+    "url": "https://www.joybusinessacademy.com"
+  }
+}

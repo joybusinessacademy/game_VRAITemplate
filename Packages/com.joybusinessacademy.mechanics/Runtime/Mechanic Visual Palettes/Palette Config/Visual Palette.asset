@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f487bf6c686394d908dea285ae191d, type: 3}
+  m_Name: Visual Palette
+  m_EditorClassIdentifier: 
+  visualComponentsDetected:
+  - name: Audio Playback
+    isActive: 0
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: AP play image
+    textmeshComponents: []
+    buttonComponents:
+    - normalColor: {r: 0, g: 0, b: 0, a: 1}
+      highlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      pressedColor: {r: 1, g: 1, b: 1, a: 1}
+      selectedColor: {r: 1, g: 1, b: 1, a: 1}
+      disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      keyId: AP play button
+  - name: Deep Breath
+    isActive: 0
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: DB heart image
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: DB breath circle
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: DB breath circle background
+    textmeshComponents: []
+    buttonComponents: []
+  - name: Info Popup
+    isActive: 0
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: IP text only background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: IP text only boarder
+    textmeshComponents:
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: IP text only text
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: IP next button text
+    buttonComponents:
+    - normalColor: {r: 0, g: 0, b: 0, a: 1}
+      highlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      pressedColor: {r: 1, g: 1, b: 1, a: 1}
+      selectedColor: {r: 1, g: 1, b: 1, a: 1}
+      disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      keyId: IP next button
+    - normalColor: {r: 0, g: 0, b: 0, a: 1}
+      highlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      pressedColor: {r: 1, g: 1, b: 1, a: 1}
+      selectedColor: {r: 1, g: 1, b: 1, a: 1}
+      disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      keyId: IP marker button
+  - name: Marker
+    isActive: 0
+    imageComponents: []
+    textmeshComponents: []
+    buttonComponents:
+    - normalColor: {r: 0, g: 0, b: 0, a: 1}
+      highlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      pressedColor: {r: 1, g: 1, b: 1, a: 1}
+      selectedColor: {r: 1, g: 1, b: 1, a: 1}
+      disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      keyId: MQ marker button
+  - name: Multiple Choice Button
+    isActive: 1
+    imageComponents: []
+    textmeshComponents:
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: MCQ button text
+    buttonComponents:
+    - normalColor: {r: 0, g: 0, b: 0, a: 1}
+      highlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      pressedColor: {r: 1, g: 1, b: 1, a: 1}
+      selectedColor: {r: 1, g: 1, b: 1, a: 1}
+      disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      keyId: MCQ button
+  - name: Multiple Choice Question
+    isActive: 1
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: MCQ title background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: MCQ title line
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: MCQ panel background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: MCQ content background
+    textmeshComponents:
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: MCQ title text
+    buttonComponents: []
+  - name: Rank Order Item
+    isActive: 0
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO item background
+    textmeshComponents:
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO item text
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO custom item text
+    buttonComponents: []
+  - name: Rank Order Questions
+    isActive: 0
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO question background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO inner question background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO slots background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO items background
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO slots line
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO items line
+    textmeshComponents:
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO items title text
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO items slots text
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO continue button text
+    buttonComponents:
+    - normalColor: {r: 0, g: 0, b: 0, a: 1}
+      highlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      pressedColor: {r: 1, g: 1, b: 1, a: 1}
+      selectedColor: {r: 1, g: 1, b: 1, a: 1}
+      disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      keyId: RO continue button
+  - name: Rank Order Slot
+    isActive: 0
+    imageComponents:
+    - color: {r: 1, g: 1, b: 1, a: 1}
+      keyId: RO slot background
+    textmeshComponents:
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO slot text
+    - textsFont: {fileID: 0}
+      fontColor: {r: 0, g: 0, b: 0, a: 1}
+      keyId: RO slot custom text
+    buttonComponents: []

@@ -1,0 +1,20 @@
+{
+    "name": "skillsvr.panoramavideo.editor",
+    "rootNamespace": "",
+    "references": [
+        "skillsvr.panoramavideo",
+        "Unity.EditorCoroutines.Editor",
+        "AVProRenderHeadsScriptsRuntime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

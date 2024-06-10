@@ -1,0 +1,16 @@
+{
+    "name": "SkillsVR.Localisation",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ac97fc41360e5cb47b78d39afe435d66"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

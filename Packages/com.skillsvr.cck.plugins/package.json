@@ -1,0 +1,21 @@
+{
+  "name": "com.skillsvr.cck.plugins",
+  "version": "1.0.4",
+  "displayName": "SVR: CCK Plugins",
+  "description": "Index of cck Plugins",
+  "unity": "2021.3",
+  "unityRelease": "16f1",
+  "keywords": [
+    "SkillsVR",
+    "SVR",
+    "Enterprise",
+    "Cloud",
+    "Learning"
+  ],
+  "author": {
+    "name": "SkillsVR",
+    "email": "gg@skillsvr.com",
+    "url": "https://skillsvr.com/"
+  },
+  "documentationUrl": "https://docs.google.com/document/d/12gh5Lf4u-pFcDlzWSsSaO81dcr0sKlf8ps6BOVuKSuQ"
+}

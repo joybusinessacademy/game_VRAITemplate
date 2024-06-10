@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b717821f3bbb5244fa4af38b671f0448, type: 3}
+  m_Name: AddressableServerDataScriptable
+  m_EditorClassIdentifier: 
+  serverEnabled: 0
+  blobBaseContainer: https://storjbasitesafegameaue.blob.core.windows.net/
+  subpathLocation: testingaddressables3
+  blobContainerURL: https://storjbasitesafegameaue.blob.core.windows.net/testingaddressables3/85/android/
+  settingsURL: https://storjbasitesafegameaue.blob.core.windows.net/testingaddressables3/85/android/Settings.json
+  customSettingsURL: https://storjbasitesafegameaue.blob.core.windows.net/testingaddressables3/CustomSettings.json
+  catalogURL: https://storjbasitesafegameaue.blob.core.windows.net/testingaddressables3/85/android/catalog_2023.01.15.21.24.02.json
+  addressableVersion: 85
+  versionURL: https://storjbasitesafegameaue.blob.core.windows.net/testingaddressables3/Version.json

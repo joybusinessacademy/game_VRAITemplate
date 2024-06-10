@@ -1,0 +1,23 @@
+{
+    "name": "VRMechanics.Editor",
+    "rootNamespace": "",
+    "references": [
+        "MechanicsAssemblyDefinition",
+        "Unity.Addressables",
+        "Unity.Addressables.Editor",
+        "Unity.EditorCoroutines.Editor",
+        "SkillsVRMessengerSystem",
+        "SkillsVRMessengerSystemRuntime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

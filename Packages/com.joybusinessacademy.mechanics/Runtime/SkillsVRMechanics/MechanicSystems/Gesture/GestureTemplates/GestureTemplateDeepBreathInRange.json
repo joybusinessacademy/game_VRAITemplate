@@ -1,0 +1,86 @@
+{
+    "gesture": {
+        "id": "DeepBreathInRange",
+        "bodyParts": [
+            {
+                "id": "Head",
+                "position": {
+                    "x": 0.0,
+                    "y": 1.7000000476837159,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "id": "RightHand",
+                "position": {
+                    "x": -0.10000000149011612,
+                    "y": 1.2999999523162842,
+                    "z": 0.10000000149011612
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            },
+            {
+                "id": "LeftHand",
+                "position": {
+                    "x": 0.5,
+                    "y": 1.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        ]
+    },
+    "detector": {
+        "detectionStepDatas": [
+            {
+                "detectorName": "RangeDetector",
+                "defaultResult": false,
+                "detectorData": {
+                    "id": 0
+                }
+            }
+        ]
+    },
+    "references": {
+        "version": 1,
+        "00000000": {
+            "type": {
+                "class": "RangeDetectionData",
+                "ns": "VRMechanics.Mechanics.GestureDetection.StepDetectors",
+                "asm": "MechanicsAssemblyDefinition"
+            },
+            "data": {
+                "detectorId": "RightHandOnHeart",
+                "targetId": "RightHand",
+                "bodyPartSpaceId": "Body",
+                "rangeRootPositionInSpace": {
+                    "x": -0.1,
+                    "y": 1.3,
+                    "z": 0.2
+                },
+                "range": 0.3
+            }
+        },
+        "00000001": {
+            "type": {
+                "class": "Terminus",
+                "ns": "UnityEngine.DMAT",
+                "asm": "FAKE_ASM"
+            },
+            "data": {}
+        }
+    }
+}

@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: MechanicsLocalizationSource
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: Mechanics/Default
+      TermType: 0
+      Description: 
+      Languages:
+      - Default
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingTitle
+      TermType: 0
+      Description: 
+      Languages:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingInformationSmall
+      TermType: 0
+      Description: 
+      Languages:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis non
+        orci ut laoreet.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingInformationMedium
+      TermType: 0
+      Description: 
+      Languages:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis non
+        orci ut laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Nam at turpis volutpat sem cursus tempor
+        a id magna.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingInformationLarge
+      TermType: 0
+      Description: 
+      Languages:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis non
+        orci ut laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Nam at turpis volutpat sem cursus tempor
+        a id magna. Vivamus ullamcorper ut enim eget mollis. Sed id placerat augue.
+        Nunc vel est luctus, congue dolor ac, tincidunt quam. In condimentum, diam
+        at feugiat tempus, ipsum leo hendrerit nisl, a finibus lectus lacus eu ligula.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingOption1
+      TermType: 0
+      Description: 
+      Languages:
+      - Option 1
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingOption2
+      TermType: 0
+      Description: 
+      Languages:
+      - Option 2
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingOption3
+      TermType: 0
+      Description: 
+      Languages:
+      - Option 3
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingOption4
+      TermType: 0
+      Description: 
+      Languages:
+      - Option 4
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingOption5
+      TermType: 0
+      Description: 
+      Languages:
+      - Option 5
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingSlot1
+      TermType: 0
+      Description: 
+      Languages:
+      - Slot 1
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingSlot2
+      TermType: 0
+      Description: 
+      Languages:
+      - Slot 2
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingSlot3
+      TermType: 0
+      Description: 
+      Languages:
+      - Slot 3
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingSlot4
+      TermType: 0
+      Description: 
+      Languages:
+      - Slot 4
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/TestingSlot5
+      TermType: 0
+      Description: 
+      Languages:
+      - Slot 5
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/RecorderInfoPop/NoPlayback/BeforeRecordText
+      TermType: 0
+      Description: 
+      Languages:
+      - When you ready, click "Start Record" button to record.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/RecorderInfoPop/NoPlayback/DuringRecordText
+      TermType: 0
+      Description: 
+      Languages:
+      - Click "Stop Record" button to Finish.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/RecorderInfoPop/NoPlayback/AfterRecordText
+      TermType: 0
+      Description: 
+      Languages:
+      - Click "Finish" to confirm and submit recorded voice.<br>Click "Retry" to
+        restart record.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/RecorderInfoPop/Playback/AfterRecordText
+      TermType: 0
+      Description: 
+      Languages:
+      - Click "Finish" to confirm and submit recorded voice.<br>Click "Retry" to
+        restart record.<br>Click "Play" to listen playback audio.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/RecorderInfoPop/Playback/DuringPlaybackText
+      TermType: 0
+      Description: 
+      Languages:
+      - Playing...
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/PlaybackPopInfo/UI/AfterPlay
+      TermType: 0
+      Description: 
+      Languages:
+      - Click "Finish" to go next step.<br>Click "Play" to listen again.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/PlaybackPopInfo/UI/BeforePlay
+      TermType: 0
+      Description: 
+      Languages:
+      - Click "Play" button to listen audio.
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/PlaybackPopInfo/UI/DuringPlay
+      TermType: 0
+      Description: 
+      Languages:
+      - Playing...
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/MCQ/PlaybackQuestion/Title
+      TermType: 0
+      Description: 
+      Languages:
+      - MCQ/PlaybackQuestion/Title
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/MCQ/PlaybackQuestion/Answer1
+      TermType: 0
+      Description: 
+      Languages:
+      - MCQ/PlaybackQuestion/Answer1
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/MCQ/PlaybackQuestion/Answer2
+      TermType: 0
+      Description: 
+      Languages:
+      - MCQ/PlaybackQuestion/Answer2
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/MCQ/PlaybackQuestion/Answer3
+      TermType: 0
+      Description: 
+      Languages:
+      - MCQ/PlaybackQuestion/Answer3
+      Flags: 00
+      Languages_Touch: []
+    - Term: Mechanics/MCQ/PlaybackQuestion/Answer4
+      TermType: 0
+      Description: 
+      Languages:
+      - MCQ/PlaybackQuestion/Answer4
+      Flags: 00
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: 
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbzUj8I9lRCE2UyEAHDu14BMD0XqXwq_uU8fkLqxuc7H9J3Swa4/exec
+    Google_SpreadsheetKey: 1lUCA6b-oib-Ezu29HnlK5h11BgK40cJjDq6WQkURvQI
+    Google_SpreadsheetName: VRMechanicsLocalization
+    Google_LastUpdatedVersion: 1666056760754
+    Google_Password: change_this
+    GoogleUpdateFrequency: 1
+    GoogleInEditorCheckFrequency: 1
+    GoogleUpdateSynchronization: 0
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1

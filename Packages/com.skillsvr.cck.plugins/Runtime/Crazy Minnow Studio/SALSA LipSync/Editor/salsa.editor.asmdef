@@ -1,0 +1,18 @@
+{
+    "name": "salsa.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9cf8fd069d45f964d845df8c7d010bae"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

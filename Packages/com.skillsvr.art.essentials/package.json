@@ -1,0 +1,21 @@
+{
+  "name": "com.skillsvr.art.essentials",
+  "version": "1.0.2",
+  "displayName": "SVR: Art Essentials",
+  "description": "Essential core art assets needed for SkillsVR assets",
+  "unity": "2021.3",
+  "unityRelease": "10f1",
+  "keywords": [
+    "SkillsVR",
+    "SVR",
+    "Enterprise",
+    "Cloud",
+    "Learning"
+  ],
+  "author": {
+    "name": "SkillsVR",
+    "email": "gg@prideandjoy.org",
+    "url": "https://skillsvr.com/"
+  },
+  "documentationUrl": "https://docs.google.com/document/d/12gh5Lf4u-pFcDlzWSsSaO81dcr0sKlf8ps6BOVuKSuQ"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "com.skillsvr.svrvideopackage",
+  "version": "5.0.0",
+  "displayName": "Skills VR Video Packager",
+  "description": "Base Video package for Skills VR games.",
+  "unity": "2019.3",
+  "unityRelease": "11f1",
+  "keywords": [
+    "SVR",
+    "VRCore",
+    "Facilitator"
+  ],
+  "author": {
+    "name": "SkillsVR",
+    "email": "gg@skillsvr.com",
+    "url": "https://skillsvr.com/"
+  }
+}
