@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -14,12 +15,21 @@ public class GPTService : AbstractService<GPTService>
         service = new GameObject(nameof(GPTService)).AddComponent<GPTService>();
         GameObject.DontDestroyOnLoad(service.gameObject);
     }
-
-    private const string apiKey = "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";
+    private const string base64x = "c2stZDlVZjBXNklwMk9rVW5NeDBtTjJUM0JsYmtGSnNSWE1MdUdMZ0dQdmE1MzN1SDlO";
+    private static string apiKey
+    {
+        get
+        {
+            byte[] data = Convert.FromBase64String(base64x);
+            return System.Text.Encoding.UTF8.GetString(data);
+        }
+    }
 
     public static void CreateAssistant(string @instructions, string vectorStoreId, System.Action<string> onComplete)
     {
-        var vectorStore = new ToolResources.VectorStoreBody() { vector_store_ids = new List<string>{ vectorStoreId } };
+        var vectorStore = vectorStoreId == "None" ? 
+            new ToolResources.VectorStoreBody() :
+            new ToolResources.VectorStoreBody() { vector_store_ids = new List<string>{ vectorStoreId } };
         APIService.POST("https://api.openai.com/v1/assistants", BaseAssistantRequest.header,
            new CreateAssistantRequest() { instructions = @instructions, tool_resources = new ToolResources() { file_search = vectorStore } },
            (response) =>

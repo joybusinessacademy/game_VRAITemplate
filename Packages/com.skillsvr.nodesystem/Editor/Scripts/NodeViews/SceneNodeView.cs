@@ -300,7 +300,7 @@ namespace SkillsVRNodes.Editor.NodeViews
 					if (dialogNode.dialogueAsset != null)
 						dialogNode.nodeCustomName = dialogNode.dialogueAsset.name;
 
-					//EditorCoroutineUtility.StartCoroutineOwnerless(CreateAssistant(dialog, dropdownFiles.text));
+					EditorCoroutineUtility.StartCoroutineOwnerless(CreateAssistant(dialog, dropdownFiles.text));
 
 				};
 

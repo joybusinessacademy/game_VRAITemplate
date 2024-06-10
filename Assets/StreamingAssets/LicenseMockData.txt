@@ -1,0 +1,5 @@
+{
+    "licenseType": "1",
+    "licenseActivationDate": "01/01/1930",
+    "licenseExpirationDate": "01/01/2025"
+}
