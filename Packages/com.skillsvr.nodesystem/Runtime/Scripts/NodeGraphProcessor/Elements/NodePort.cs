@@ -365,7 +365,6 @@ namespace GraphProcessor
 			if (port == null)
 			{
 				Remove(edge);
-				Debug.LogError("Nuke from orbit");
 				return;
 			}
 

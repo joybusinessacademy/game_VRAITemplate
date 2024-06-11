@@ -228,7 +228,6 @@ namespace SkillsVRNodes.Editor.NodeViews
 				
 				visualElement.Add(uploadBar);
 
-
 				Button generateButton = new() { name = "Generate", text = "Generate" };
 				generateButton.clicked += () =>
 				{
@@ -255,6 +254,7 @@ namespace SkillsVRNodes.Editor.NodeViews
 					var introOutport = intro.outputPorts.Find(a => a.fieldName.Equals("Complete"));
 					var introInport = intro.inputPorts.Find(a => a.fieldName.Equals("executed"));
 
+					/*
 					// information about the topic
 					var aboutthetopic = sceneGraph.AddNode(BaseNode.CreateFromType(typeof(DialogueNode), Vector2.zero));
 					nodes.Add(aboutthetopic);
@@ -266,41 +266,26 @@ namespace SkillsVRNodes.Editor.NodeViews
 					nodes.Add(whatwouldyouliketoknow);
 					var whatyouliketoknowOutport = whatwouldyouliketoknow.outputPorts.Find(a => a.fieldName.Equals("Complete"));
 					var whatyouliketoknowInport = whatwouldyouliketoknow.inputPorts.Find(a => a.fieldName.Equals("executed"));
-
+					*/
 
 					// gpt port
-
+					var gptNode = sceneGraph.AddNode(BaseNode.CreateFromType(typeof(GPTNode), Vector2.zero));
+					var gptOutport = gptNode.outputPorts.Find(a => a.fieldName.Equals("Complete"));
+					var gptInport = gptNode.inputPorts.Find(a => a.fieldName.Equals("executed"));
+					nodes.Add(gptNode);
 
 					var endNode = sceneGraph.nodes.Find(k => k is EndNode);
 					nodes.Add(endNode);
 					var endInport = endNode.inputPorts.Find(a => a.fieldName.Equals("executed"));
 
-					sceneGraph.Connect(startOutport, introInport);
-					sceneGraph.Connect(introOutport, aboutInport);
-					sceneGraph.Connect(aboutOutport, whatyouliketoknowInport);
-
-					bool loop = false;
-					if (!loop)
-					{
-						sceneGraph.Connect(whatyouliketoknowOutport, endInport);
-					}
-					else
-					{
-					}
+					sceneGraph.Connect(introInport, startOutport);
+					sceneGraph.Connect(gptInport, introOutport); 
 
 					for (int i = 1; i < nodes.Count; i++)
 						nodes[i].position.position = nodes[i - 1].position.position + new Vector2(nodes[i-1].Width + 100, 0);
 
-
-					var dialog = ScriptableObjectManager.CreateScriptableObject<DialogExporter.LocalizedDialog>(ScriptableObjectManager.Path() + "/" + sceneGraph.name, "Dialog_1");
-					var dialogNode = intro as DialogueNode;
-					dialogNode.dialogueAsset = dialog;
-					dialogNode.audioClipBeingUsed = dialogNode.dialogueAsset != null ? dialogNode.dialogueAsset.GetAudioClip : null;
-
-					if (dialogNode.dialogueAsset != null)
-						dialogNode.nodeCustomName = dialogNode.dialogueAsset.name;
-
-					EditorCoroutineUtility.StartCoroutineOwnerless(CreateAssistant(dialog, dropdownFiles.text));
+					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience( dropdownFiles.text));
+					
 
 				};
 
@@ -315,35 +300,111 @@ namespace SkillsVRNodes.Editor.NodeViews
 			return visualElement;
 		}
 
-		IEnumerator CreateAssistant(LocalizedDialog dialog, string vectorStoreId)
+		IEnumerator CreateExperience(string vectorStoreId)
         {
 			AttachedNode.assistantId = string.Empty;
-			AttachedNode.threadId = string.Empty;
+			var threadId = string.Empty;
+
+			EditorUtility.DisplayProgressBar($"Generating", "Creating assistant...", 0.1f);
 
 			// create assistant
 			GPTService.CreateAssistant(AttachedNode.assistantInstruction, vectorStoreId, (response) => {
 				JObject data = JObject.Parse(response);
-				AttachedNode.assistantId = data["id"].ToString();				
+				AttachedNode.assistantId = data["id"].ToString();
+				var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
+				(sceneGraph as SceneGraph).assistantId = AttachedNode.assistantId;
 			});
 		
+
 			// create thread
 			GPTService.CreateThread((response) => {
 				JObject data = JObject.Parse(response);
-				AttachedNode.threadId = data["id"].ToString();
+				threadId = data["id"].ToString();
 			});
 
-			yield return new WaitUntil(() => !string.IsNullOrEmpty(AttachedNode.threadId) && !string.IsNullOrEmpty(AttachedNode.assistantId));
+			yield return new WaitUntil(() => !string.IsNullOrEmpty(threadId) && !string.IsNullOrEmpty(AttachedNode.assistantId));
 
+
+			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs... (1/6)", 0.3f);
+			List<object[]> clips = new List<object[]>();
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, AttachedNode.npcId.ToLower().Contains("female") ?
+				"Short introduction about yourself in a conversational format. Give yourself a random female name. Limit to 30 - 50 words" :
+				"Short introduction about yourself in a conversational format. Give yourself a random male name. Limit to 30 - 50 words",
+				(response) => {
+					clips.Add(response);
+				}));
+
+
+			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (2/6)...", 0.4f);
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+					(response) => {
+						clips.Add(response);
+					}));
+
+			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (3/6)...", 0.5f);
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+					(response) => {
+						clips.Add(response);
+					}));
+
+			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (4/6)...", 0.6f);
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+					(response) => {
+						clips.Add(response);
+					}));
+			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (5/6)...", 0.7f);
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+					(response) => {
+						clips.Add(response);
+					}));
+			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (6/6)...", 0.8f);
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+					(response) => {
+						clips.Add(response);
+					}));
+
+			// all files complete
+			// refresh all together
+			EditorUtility.DisplayProgressBar($"Generating", "Finalizing...", 0.95f);
+			var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
+			AssetDatabase.Refresh();
+			bool first = true;
+			var gptNode = sceneGraph.nodes.Find(k => k is GPTNode) as GPTNode;
+			var introDialog = sceneGraph.nodes.Find(k => k is DialogueNode) as DialogueNode;
+			clips.ForEach(k =>
+			{
+				var queue = k[0] as ElevenLabsService.QueuedRequestParameter;
+				var dialog = ScriptableObjectManager.CreateScriptableObject<LocalizedDialog>(ScriptableObjectManager.Path() + "/" + sceneGraph.name, Path.GetFileName(queue.filePath));
+				dialog.Dialog = k[1] as string;
+				queue.text = dialog.Dialog;
+				
+				dialog.SetCustomAudio(AssetDatabase.LoadAssetAtPath<AudioClip>(queue.filePath.Replace(Application.dataPath, "Assets")) as AudioClip);
+				ScriptableObjectManager.ForceSerialization(dialog);
+
+				if (first == false)
+					gptNode.fillerDialogs.Add(dialog);
+
+				if (first)
+				{
+					first = false;
+					introDialog.dialogueAsset = dialog;
+				}
+			});
+
+			EditorUtility.ClearProgressBar();
+
+		}
+
+		IEnumerator AddMessageAndCreateClip(string threadId, string message, System.Action<object[]> onComplete)
+		{
 			// create self introduction
-			GPTService.AddMessageToThread(AttachedNode.threadId, AttachedNode.npcId.ToLower().Contains("female") ?
-				"Short introduction about yourself. Give yourself a random female name. Limit to 30 - 50 words" :
-				"Short introduction about yourself. Give yourself a random male name. Limit to 30 - 50 words", (response) => { });
+			GPTService.AddMessageToThread(threadId, message, (response) => { });
 
-			string runId = string.Empty; 
-			GPTService.ThreadRun(AttachedNode.threadId, AttachedNode.assistantId, (response) => {
+			string runId = string.Empty;
+			GPTService.ThreadRun(threadId, AttachedNode.assistantId, (response) => {
 				JObject data = JObject.Parse(response);
 				runId = data["id"].ToString();
-				AttachedNode.threadId = data["thread_id"].ToString();
+				threadId = data["thread_id"].ToString();
 			});
 
 			yield return new WaitUntil(() => !string.IsNullOrEmpty(runId));
@@ -353,11 +414,10 @@ namespace SkillsVRNodes.Editor.NodeViews
 			while (!status.Equals("completed"))
 			{
 				bool responsed = false;
-				GPTService.RetrieveRun(AttachedNode.threadId, runId, (response) =>
+				GPTService.RetrieveRun(threadId, runId, (response) =>
 				{
 					JObject data = JObject.Parse(response);
 					status = data["status"].ToString();
-					Debug.Log(status);
 					responsed = true;
 				});
 
@@ -365,26 +425,26 @@ namespace SkillsVRNodes.Editor.NodeViews
 				yield return new WaitForSeconds(1);
 			}
 
-			GPTService.GetMessages(AttachedNode.threadId , AttachedNode.assistantId, (response) =>
+			bool requestCompleted = false;
+			GPTService.GetMessages(threadId, AttachedNode.assistantId, (response) =>
 			{
 				JObject data = JObject.Parse(response);
 				string value = data["data"][0]["content"][0]["text"]["value"].ToString();
+				var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
+				var path = ScriptableObjectManager.Path() + "/" + sceneGraph.name + "/clips/" + System.DateTime.Now.Ticks.ToString() + ".mp3";
 
 				var queue = new ElevenLabsService.QueuedRequestParameter();
-				dialog.Dialog = value;
-				queue.text = dialog.Dialog;
-				queue.onComplete = (response) => {
-
-					AssetDatabase.Refresh();
-					dialog.SetCustomAudio(AssetDatabase.LoadAssetAtPath<AudioClip>(queue.filePath.Replace(Application.dataPath, "Assets")) as AudioClip);
-					ScriptableObjectManager.ForceSerialization(dialog);
+				queue.text = value;
+				queue.filePath = path;
+				queue.onComplete = (response) => {					
+					onComplete.Invoke(new object[] {queue , value});
+					requestCompleted = true;
 				};
-
-				queue.filePath = Path.Combine(Application.dataPath, System.DateTime.Now.Ticks.ToString() + ".mp3");
-				ElevenLabsService.Request(queue);
+				
+				ElevenLabsService.Request(queue, true);
 			});
 
-
+			yield return new WaitUntil(() => requestCompleted == true);
 		}
 
 		/// <summary>

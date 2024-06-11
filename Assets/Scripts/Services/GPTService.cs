@@ -34,7 +34,7 @@ public class GPTService : AbstractService<GPTService>
            new CreateAssistantRequest() { instructions = @instructions, tool_resources = new ToolResources() { file_search = vectorStore } },
            (response) =>
            {
-               Debug.Log("CreateAssistant " + response.downloadHandler.text);
+               //Debug.Log("CreateAssistant " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            }); ;
     }
@@ -45,7 +45,7 @@ public class GPTService : AbstractService<GPTService>
            new CreateThreadRequest() { },
            (response) =>
            {
-               Debug.Log("CreateThread " + response.downloadHandler.text);
+               //Debug.Log("CreateThread " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            });
     }
@@ -56,7 +56,7 @@ public class GPTService : AbstractService<GPTService>
            new ThreadMessageRequestData() { content = message },
            (response) =>
            {
-               Debug.Log("AddMessageToThread " + response.downloadHandler.text);
+               //Debug.Log("AddMessageToThread " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            });
     }
@@ -68,7 +68,7 @@ public class GPTService : AbstractService<GPTService>
            new AssistantThreadRunRequest() { assistant_id = assistantId },
            (response) =>
            {
-               Debug.Log("ThreadRun " + response.downloadHandler.text);
+               //Debug.Log("ThreadRun " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            });
     }
@@ -78,7 +78,7 @@ public class GPTService : AbstractService<GPTService>
         APIService.GET(string.Format("https://api.openai.com/v1/threads/{0}/runs/{1}", threadId, runId), BaseAssistantRequest.header,
            (response) =>
            {
-               Debug.Log("RetrieveRun " + response.downloadHandler.text);
+               //Debug.Log("RetrieveRun " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            });
     }
@@ -88,7 +88,7 @@ public class GPTService : AbstractService<GPTService>
         APIService.GET(string.Format("https://api.openai.com/v1/threads/{0}/messages", threadId), BaseAssistantRequest.header,
            (response) =>
            {
-               Debug.Log("GetMessages " + response.downloadHandler.text);
+               //Debug.Log("GetMessages " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            });
     }
@@ -108,7 +108,7 @@ public class GPTService : AbstractService<GPTService>
             new CreateVectorStoreRequest() { name = name, file_ids = ids.ToList() },
            (response) =>
            {
-               Debug.Log("CreateVectorStore " + response.downloadHandler.text);
+               //Debug.Log("CreateVectorStore " + response.downloadHandler.text);
                onComplete.Invoke(response.downloadHandler.text);
            });
     }
@@ -118,7 +118,7 @@ public class GPTService : AbstractService<GPTService>
         APIService.GET(string.Format("https://api.openai.com/v1/vector_stores"), BaseAssistantRequest.header,
         (response) =>
         {
-            Debug.Log("GetAllVectorStore " + response.downloadHandler.text);
+            //Debug.Log("GetAllVectorStore " + response.downloadHandler.text);
             onComplete.Invoke(response.downloadHandler.text);
         });
     }

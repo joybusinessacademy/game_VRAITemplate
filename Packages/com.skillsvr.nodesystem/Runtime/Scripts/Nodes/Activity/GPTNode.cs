@@ -1,9 +1,14 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using DialogExporter;
 using GraphProcessor;
 using Newtonsoft.Json.Linq;
 using Oculus.VoiceSDK.UX;
 using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.UIElements;
 
 namespace SkillsVRNodes.Scripts.Nodes
 {
@@ -18,21 +23,43 @@ namespace SkillsVRNodes.Scripts.Nodes
 
 		public static GameObject gptInstance = null;
 		private GameObject instance;
+
+		private AudioSource propManager = null;
+		private static Dictionary<BaseGraph, string> graphThreadIdPair = new Dictionary<BaseGraph, string>();
+
+		public List<LocalizedDialog> fillerDialogs = new List<LocalizedDialog>();
+
+
 		protected override void OnStart()
 		{
+			if (!graphThreadIdPair.ContainsKey(Graph))
+			{
+				GPTService.CreateThread((response) => {
+					JObject data = JObject.Parse(response);
+					graphThreadIdPair.Add(Graph, data["id"].ToString());
+				});
+			}
+
+			propManager = GameObject.Find("Prop Manager").GetComponent<AudioSource>();
+
 			if (gptInstance == null)
 				gptInstance = GameObject.Instantiate(Resources.Load("GPTPrefab")) as GameObject;
 
 			gptInstance.GetComponentInChildren<VoiceActivationButton>().onComplete.AddListener(OnVoiceEnded);
 		}
 
+
+
 		private IEnumerator RunGPT(string text)
 		{
-			string threadId = "";
-			string assistantId = "";
+			var targetClip = fillerDialogs[(int)UnityEngine.Random.Range(0, fillerDialogs.Count)].GetAudioClip;
+		 	propManager.PlayOneShot(targetClip);
+			DateTime startTime = DateTime.Now;
 
-			// create self introduction
-			GPTService.AddMessageToThread(threadId, text, (response) => { });
+			string threadId = graphThreadIdPair[Graph];
+			string assistantId = (graph as SceneGraph).assistantId;
+
+			GPTService.AddMessageToThread(threadId, text + "\n KEEP IT SHORT and conversation format, sometimes reiterate what the subject of the sentence and make sure you redirect it to the topic. follow up with related next question. remove all special characters. also limit to max senteces to 5", (response) => { });
 
 			string runId = string.Empty;
 			GPTService.ThreadRun(threadId, assistantId, (response) => {
@@ -62,12 +89,38 @@ namespace SkillsVRNodes.Scripts.Nodes
 			GPTService.GetMessages(threadId, assistantId, (response) =>
 			{
 				JObject data = JObject.Parse(response);
-				string value = data["data"][0]["content"][0]["text"]["value"].ToString();
+				string text = data["data"][0]["content"][0]["text"]["value"].ToString();
+
+				var queue = new ElevenLabsService.QueuedRequestParameter();
+				queue.text = text;
+				queue.onComplete = (response) => {
+
+					DateTime endTime = DateTime.Now;
+					TimeSpan elapsed = endTime - startTime;
+
+					var delta = Math.Max(0, elapsed.TotalSeconds - targetClip.length);
+					WaitMonoBehaviour.Process((float)delta, () =>
+					{
+						AudioClip myClip = DownloadHandlerAudioClip.GetContent(response);
+						propManager.PlayOneShot(myClip);
+
+						WaitMonoBehaviour.Process(myClip.length + 0.5f, () =>
+						{
+							gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).enabled = true;
+							gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).interactable = true;
+						});
+					});					
+				};
+
+				ElevenLabsService.Request(queue);
 			});
 		}
+
 		public void OnVoiceEnded(string text)
         {
-			
+			gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).enabled = false;
+			gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).interactable = false;
+			APIService.service.StartCoroutine(RunGPT(text));
 		}
 
 

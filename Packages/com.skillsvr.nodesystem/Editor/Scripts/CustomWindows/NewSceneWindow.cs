@@ -226,7 +226,8 @@ namespace SkillsVRNodes.Scripts
             currentSceneNode.scenePath = GraphSetupTools.CreateSceneAndAddToBuild(sceneName);
             EditorUtility.DisplayProgressBar($"Create New Scene {sceneName}", "Setup default scene objects...", 0.5f);
             SetupSceneGraph.SetUpScene();
-            EditorUtility.DisplayProgressBar($"Create New Scene {sceneName}", "Saving asset...", 0.7f);
+
+			EditorUtility.DisplayProgressBar($"Create New Scene {sceneName}", "Saving asset...", 0.7f);
             EditorSceneManager.SaveOpenScenes();
             EditorUtility.DisplayProgressBar($"Create New Scene {sceneName}", "Adding scene to project...", 0.9f);
             GraphProjectData graphProjectData = GraphFinder.GetGraphData(GraphFinder.CurrentGraph);

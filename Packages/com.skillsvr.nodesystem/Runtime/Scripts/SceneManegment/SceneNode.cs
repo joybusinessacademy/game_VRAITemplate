@@ -45,7 +45,6 @@ namespace SkillsVRNodes.Scripts.Nodes
 		public string npcId;
 		
 
-		public string threadId;
 		public string assistantId;
 		public string assistantInstruction;
 		public string assitantFiles;

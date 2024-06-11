@@ -39,9 +39,11 @@ public class ElevenLabsService : AbstractService<ElevenLabsService>
         QueuedRequestParameter.queue.Add(queue);
     }
 
-    public static void Request(QueuedRequestParameter queue)
+    public static void Request(QueuedRequestParameter queue, bool ignoreFilePath = false)
     {
-        queue.filePath = queue.filePath ?? Path.Combine(Application.temporaryCachePath, System.DateTime.Now.Ticks.ToString() + ".mp3");
+        if (!ignoreFilePath)
+            queue.filePath = queue.filePath ?? Path.Combine(Application.temporaryCachePath, System.DateTime.Now.Ticks.ToString() + ".mp3");
+
         APIService.POST(url, RequestData.header, new RequestData() { text = queue.text }, (response) =>
         {
             QueuedRequestParameter.concurrentRequest--;

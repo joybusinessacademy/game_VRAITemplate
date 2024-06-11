@@ -8,6 +8,12 @@ namespace SkillsVRNodes.Editor.NodeViews
 	public class GPTNodeView : BaseNodeView
 	{
 		private GPTNode Node => AttachedNode<GPTNode>();
-
+		public override VisualElement GetNodeVisualElement()
+		{
+			VisualElement visualElement = new();
+			return visualElement;
+		}
 	}
+
+
 }

@@ -37,6 +37,7 @@ namespace GraphProcessor
 	[System.Serializable]
 	public abstract class BaseGraph : ScriptableObject, ISerializationCallbackReceiver
 	{
+
 		static readonly int			maxComputeOrderDepth = 1000;
 		
 		/// <summary>Invalid compute order number of a node when it's inside a loop</summary>
