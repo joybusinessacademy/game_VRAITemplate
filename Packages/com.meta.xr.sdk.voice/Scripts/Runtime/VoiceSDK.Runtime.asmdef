@@ -7,7 +7,8 @@
         "Meta.WitAi",
         "Meta.WitAi.Conduit",
         "Meta.WitAi.Lib",
-        "Meta.WitAi.TTS"
+        "Meta.WitAi.TTS",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -18,9 +19,9 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "define": "OVR_UNITY_PACKAGE_MANAGER",
             "name": "com.meta.xr.sdk.voice",
-            "expression": ""
+            "expression": "",
+            "define": "OVR_UNITY_PACKAGE_MANAGER"
         }
     ],
     "noEngineReferences": false

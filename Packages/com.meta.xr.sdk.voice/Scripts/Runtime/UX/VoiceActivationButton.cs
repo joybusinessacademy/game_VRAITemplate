@@ -174,6 +174,7 @@ namespace Oculus.VoiceSDK.UX
         }
 
         public Text displayText;
+        public TMPro.TextMeshProUGUI realDisplay;
         public string collectedString => string.Join("", strings.ToArray()) + displayText.text;
 
         // Request completed
@@ -193,6 +194,19 @@ namespace Oculus.VoiceSDK.UX
                 displayText.text = string.Empty;
                 Activate();
             }
+        }
+
+        private const int maxWords = 50;
+
+        private void FixedUpdate()
+        {
+            realDisplay.text = collectedString;
+            string[] words = realDisplay.text.Split(' ');
+
+            int startWordIndex = Mathf.Max(0, words.Length - maxWords);
+            string lastFewWords = string.Join(" ", words, startWordIndex, words.Length - startWordIndex);
+
+            realDisplay.text = lastFewWords;
         }
 
         // Refresh active text

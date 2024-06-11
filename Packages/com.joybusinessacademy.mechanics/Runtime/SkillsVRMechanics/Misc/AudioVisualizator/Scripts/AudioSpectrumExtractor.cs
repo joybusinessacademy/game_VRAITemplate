@@ -61,12 +61,6 @@ namespace SkillsVR.Mechanic.Audio.Visualizator
         public class AudioDataEvent : UnityEngine.Events.UnityEvent<float[]> { }
         public AudioDataEvent onFilteredData = new AudioDataEvent();
 
-        /*
-        public Meta.WitAi.Data.AudioBuffer audioBuffer;
-        void Start()
-        {
-            audioBuffer.Events.on
-        }*/
         // Update is called once per frame
         protected void Update()
         {
@@ -162,7 +156,6 @@ namespace SkillsVR.Mechanic.Audio.Visualizator
 
             if (sourceData.autoPlay && !sourceData.audioSource.isPlaying)
             {
-                Debug.Log("I AM PLAYING NOW");
                 sourceData.audioSource.Play();
             }
 
@@ -171,7 +164,7 @@ namespace SkillsVR.Mechanic.Audio.Visualizator
             float volumeNormalizeScale = 0.0f >= sourceData.audioSource.volume ? 0.0f : 1.0f / sourceData.audioSource.volume;
             for (int i = 0; i < outputData.Length; i++)
             {
-                outputData[i] *= 1;
+                outputData[i] *= volumeNormalizeScale;
             }
         }
 
