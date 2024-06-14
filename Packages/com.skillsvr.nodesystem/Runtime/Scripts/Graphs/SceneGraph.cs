@@ -6,5 +6,7 @@ namespace GraphProcessor
 	public class SceneGraph : BaseGraph
 	{
 		public string assistantId;
+		public string npcId;
+		public string assistantInstruction;
 	}
 }

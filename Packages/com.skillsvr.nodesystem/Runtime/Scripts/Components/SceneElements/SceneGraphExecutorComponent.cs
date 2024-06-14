@@ -24,6 +24,8 @@ namespace SkillsVRNodes
 		public void Awake()
 		{
 			SetUpGraph(graph);
+
+			//string assistantId = (graph as SceneGraph).npcId;
 		}
 		public void SetUpGraph(SceneGraph newGraph)
 		{

@@ -20,7 +20,7 @@ public class AssetDatabaseAdder : AssetPostprocessor
 
             foreach (Object asset in assets)
             {
-                if (asset == null)
+                if (asset == null || asset is SceneAsset)
                 {
                     continue;
                 }

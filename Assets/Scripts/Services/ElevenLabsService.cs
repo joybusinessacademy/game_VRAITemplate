@@ -16,13 +16,10 @@ public class ElevenLabsService : AbstractService<ElevenLabsService>
         GameObject.DontDestroyOnLoad(service.gameObject);
     }
         
-    private const string url = "https://api.elevenlabs.io/v1/text-to-speech/ZY37LYw0WtCyedeNw2EV";
-    //"https://api.elevenlabs.io/v1/text-to-speech/GXv29rfMJdSYxJgUyfZr";
+    public static string url => string.Format("https://api.elevenlabs.io/v1/text-to-speech/{0}", voiceId);
+    public static string voiceId = "ZY37LYw0WtCyedeNw2EV";
     private const string apiKey = "85afa703f97ce1537d14636323cf35ea";
-    //"6497d351c68f906bee01c111a4e90aa1";
 
-    // lady XfNU2rGpBa01ckF309OY
-    // male ZY37LYw0WtCyedeNw2EV
 
     public void Generate(string content)
     {

@@ -175,7 +175,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6253696715376240979
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -192,7 +192,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6885210348491991014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +219,6 @@ MonoBehaviour:
         propComponent: {fileID: 6885210348491991014}
         animator: {fileID: 6253696715376240979}
         audioSource: {fileID: 3134451062552616719}
-        playableDirector: {fileID: 6017418737769184692}
         lookAtPoint: {fileID: 5908829637736460326}
 --- !u!82 &3134451062552616719
 AudioSource:
@@ -4153,11 +4152,11 @@ MonoBehaviour:
         textures: []
         materialRenderer: {fileID: 0}
         materials: []
-      inspFoldout: 1
+      inspFoldout: 0
       previewDisplayMode: 0
       collectionExpand: 0
     isRandomEmote: 0
-    isLipsyncEmphasisEmote: 1
+    isLipsyncEmphasisEmote: 0
     isRepeaterEmote: 0
     repeaterDelay: 0
     startDelay: 0
@@ -5371,7 +5370,7 @@ MonoBehaviour:
       previewDisplayMode: 0
       collectionExpand: 0
     isRandomEmote: 0
-    isLipsyncEmphasisEmote: 1
+    isLipsyncEmphasisEmote: 0
     isRepeaterEmote: 0
     repeaterDelay: 0
     startDelay: 0
@@ -6522,7 +6521,7 @@ MonoBehaviour:
       previewDisplayMode: 0
       collectionExpand: 0
     isRandomEmote: 0
-    isLipsyncEmphasisEmote: 1
+    isLipsyncEmphasisEmote: 0
     isRepeaterEmote: 0
     repeaterDelay: 0
     startDelay: 0
@@ -9912,7 +9911,7 @@ MonoBehaviour:
       previewDisplayMode: 0
       collectionExpand: 0
     isRandomEmote: 0
-    isLipsyncEmphasisEmote: 1
+    isLipsyncEmphasisEmote: 0
     isRepeaterEmote: 0
     repeaterDelay: 0
     startDelay: 0

@@ -21,6 +21,8 @@ using Button = UnityEngine.UIElements.Button;
 using Unity.EditorCoroutines.Editor;
 using DialogExporter;
 using SFB;
+using Props;
+using Props.PropInterfaces;
 
 namespace SkillsVRNodes.Editor.NodeViews
 {
@@ -137,20 +139,15 @@ namespace SkillsVRNodes.Editor.NodeViews
 			// *************************
 			if (!string.IsNullOrEmpty(AttachedNode.templateId))
 			{
+				var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
+
 				DropdownField npcs = new DropdownField("Main NPC");
 				npcs.choices.Add("Dru (Male)");
 				npcs.choices.Add("Elle (Female)");
-				npcs.value = string.IsNullOrEmpty(AttachedNode.npcId) ? "Dru (Male)" : AttachedNode.npcId;
+				npcs.value = string.IsNullOrEmpty((sceneGraph as SceneGraph).npcId) ? "Dru (Male)" : (sceneGraph as SceneGraph).npcId;
 				npcs.RegisterCallback<ChangeEvent<string>>(evt =>
 				{
-					switch (evt.newValue)
-					{
-						case "Dru (Male)":
-							break;
-						case "Elle (Female)":
-							break;
-
-					}
+					(sceneGraph as SceneGraph).npcId = evt.newValue;
 				});
 
 				visualElement.Add(new SkillsVR.VisualElements.Divider(10));
@@ -284,8 +281,39 @@ namespace SkillsVRNodes.Editor.NodeViews
 					for (int i = 1; i < nodes.Count; i++)
 						nodes[i].position.position = nodes[i - 1].position.position + new Vector2(nodes[i-1].Width + 100, 0);
 
-					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience( dropdownFiles.text));
-					
+					ElevenLabsService.voiceId = (sceneGraph as SceneGraph).npcId.Equals("Dru (Male)") ? "ZY37LYw0WtCyedeNw2EV" : "XfNU2rGpBa01ckF309OY";
+					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience(dropdownFiles.text));
+
+					// open scene
+					// generate npc after
+					var druGUID = AssetDatabase.FindAssets($"_Dru t:Prefab").First();
+					var elleGUID = AssetDatabase.FindAssets($"_Elle t:Prefab").First();
+					EditorSceneManager.OpenScene(AttachedNode.scenePath);
+
+					// find older model 
+					GameObject.DestroyImmediate(GameObject.Find("Dru (Male)"));
+					GameObject.DestroyImmediate(GameObject.Find("Elle (Female)"));
+
+					PropManager.Validate();
+
+					GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(AssetDatabase.GUIDToAssetPath((sceneGraph as SceneGraph).npcId.Equals("Dru (Male)") ? druGUID : elleGUID));
+					var npc = GameObject.Instantiate(prefab);
+					npc.name = (sceneGraph as SceneGraph).npcId;
+
+					PropManager.AddElementEditor(npc.GetComponent<PropComponent>());
+
+					(intro as DialogueNode).dialoguePosition = new PropGUID<IPropAudioSource> { propGUID = PropManager.GetGUIDByName<IPropAudioSource>(npc.name)?.propGUID };
+
+					npc.transform.position = new Vector3(0, 0, 2);
+					npc.transform.eulerAngles = new Vector3(0, 180, 0);
+
+
+					(gptNode as GPTNode).dialoguePosition = new PropGUID<IPropAudioSource> { propGUID = PropManager.GetGUIDByName<IPropAudioSource>(npc.name)?.propGUID };
+					EditorSceneManager.MarkSceneDirty(npc.scene);
+					AssetDatabase.SaveAssets();
+
+					EditorSceneManager.SaveOpenScenes();
+					EditorSceneManager.OpenScene(AttachedNode.Graph.GetDefaultGraphScenePath());
 
 				};
 
@@ -305,13 +333,14 @@ namespace SkillsVRNodes.Editor.NodeViews
 			AttachedNode.assistantId = string.Empty;
 			var threadId = string.Empty;
 
+			var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
 			EditorUtility.DisplayProgressBar($"Generating", "Creating assistant...", 0.1f);
 
 			// create assistant
 			GPTService.CreateAssistant(AttachedNode.assistantInstruction, vectorStoreId, (response) => {
 				JObject data = JObject.Parse(response);
 				AttachedNode.assistantId = data["id"].ToString();
-				var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
+				
 				(sceneGraph as SceneGraph).assistantId = AttachedNode.assistantId;
 			});
 		
@@ -327,10 +356,11 @@ namespace SkillsVRNodes.Editor.NodeViews
 
 			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs... (1/6)", 0.3f);
 			List<object[]> clips = new List<object[]>();
-			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, AttachedNode.npcId.ToLower().Contains("female") ?
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, (sceneGraph as SceneGraph).npcId.ToLower().Contains("female") ?
 				"Short introduction about yourself in a conversational format. Give yourself a random female name. Limit to 30 - 50 words" :
 				"Short introduction about yourself in a conversational format. Give yourself a random male name. Limit to 30 - 50 words",
 				(response) => {
+					(sceneGraph as SceneGraph).assistantInstruction = AttachedNode.assistantInstruction + "\n Your introduction was " + (response[0] as ElevenLabsService.QueuedRequestParameter).text;
 					clips.Add(response);
 				}));
 
@@ -366,7 +396,6 @@ namespace SkillsVRNodes.Editor.NodeViews
 			// all files complete
 			// refresh all together
 			EditorUtility.DisplayProgressBar($"Generating", "Finalizing...", 0.95f);
-			var sceneGraph = GraphFinder.GetGraphData(AttachedNode.Graph).sceneGraphs.Find(a => a.GetGraphAssetPath.Equals(graphPathToOpen)).graphGraph;
 			AssetDatabase.Refresh();
 			bool first = true;
 			var gptNode = sceneGraph.nodes.Find(k => k is GPTNode) as GPTNode;
@@ -398,10 +427,12 @@ namespace SkillsVRNodes.Editor.NodeViews
 		IEnumerator AddMessageAndCreateClip(string threadId, string message, System.Action<object[]> onComplete)
 		{
 			// create self introduction
-			GPTService.AddMessageToThread(threadId, message, (response) => { });
+			GPTService.AddMessageToThread(threadId, message, (response) => {
+
+			});
 
 			string runId = string.Empty;
-			GPTService.ThreadRun(threadId, AttachedNode.assistantId, (response) => {
+			GPTService.ThreadRun(threadId, AttachedNode.assistantId, null, (response) => {
 				JObject data = JObject.Parse(response);
 				runId = data["id"].ToString();
 				threadId = data["thread_id"].ToString();
@@ -435,7 +466,8 @@ namespace SkillsVRNodes.Editor.NodeViews
 
 				var queue = new ElevenLabsService.QueuedRequestParameter();
 				queue.text = value;
-				queue.filePath = path;
+				queue.filePath = path;		
+				
 				queue.onComplete = (response) => {					
 					onComplete.Invoke(new object[] {queue , value});
 					requestCompleted = true;

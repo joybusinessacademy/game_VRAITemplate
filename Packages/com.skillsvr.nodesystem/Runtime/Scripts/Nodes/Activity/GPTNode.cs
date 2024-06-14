@@ -6,6 +6,8 @@ using DialogExporter;
 using GraphProcessor;
 using Newtonsoft.Json.Linq;
 using Oculus.VoiceSDK.UX;
+using Props;
+using Props.PropInterfaces;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UIElements;
@@ -15,6 +17,8 @@ namespace SkillsVRNodes.Scripts.Nodes
 	[Serializable, NodeMenuItem("Learning/GPT", typeof(SceneGraph)), NodeMenuItem("Learning/GPT", typeof(SubGraph))]
 	public class GPTNode : ExecutableNode
 	{
+		[SerializeField] public PropGUID<IPropAudioSource> dialoguePosition;
+
 		public override string name => "GPT";
 		public override string icon => "Dialogue";
 		public override string layoutStyle => "GPTNode";
@@ -49,20 +53,28 @@ namespace SkillsVRNodes.Scripts.Nodes
 		}
 
 
-
 		private IEnumerator RunGPT(string text)
 		{
 			var targetClip = fillerDialogs[(int)UnityEngine.Random.Range(0, fillerDialogs.Count)].GetAudioClip;
-		 	propManager.PlayOneShot(targetClip);
+			var sceneAudio = PropManager.GetProp<IPropAudioSource>(dialoguePosition);
+			if (sceneAudio != null)
+			{
+				sceneAudio.PlayAudio(targetClip);
+			}
+			
 			DateTime startTime = DateTime.Now;
 
 			string threadId = graphThreadIdPair[Graph];
 			string assistantId = (graph as SceneGraph).assistantId;
+			string assistantInstruction = (graph as SceneGraph).assistantInstruction;
+
+			Debug.Log(assistantInstruction);
 
 			GPTService.AddMessageToThread(threadId, text + "\n KEEP IT SHORT and conversation format, sometimes reiterate what the subject of the sentence and make sure you redirect it to the topic. follow up with related next question. remove all special characters. also limit to max senteces to 5", (response) => { });
 
 			string runId = string.Empty;
-			GPTService.ThreadRun(threadId, assistantId, (response) => {
+			GPTService.ThreadRun(threadId, assistantId, assistantInstruction,
+				(response) => {
 				JObject data = JObject.Parse(response);
 				runId = data["id"].ToString();
 			});
@@ -102,7 +114,7 @@ namespace SkillsVRNodes.Scripts.Nodes
 					WaitMonoBehaviour.Process((float)delta, () =>
 					{
 						AudioClip myClip = DownloadHandlerAudioClip.GetContent(response);
-						propManager.PlayOneShot(myClip);
+						sceneAudio.PlayAudio(myClip);
 
 						WaitMonoBehaviour.Process(myClip.length + 0.5f, () =>
 						{
@@ -112,6 +124,8 @@ namespace SkillsVRNodes.Scripts.Nodes
 					});					
 				};
 
+				Debug.Log(dialoguePosition.GetPropName());
+				ElevenLabsService.voiceId = dialoguePosition.GetPropName().Equals("Dru (Male)") ? "ZY37LYw0WtCyedeNw2EV" : "XfNU2rGpBa01ckF309OY";
 				ElevenLabsService.Request(queue);
 			});
 		}

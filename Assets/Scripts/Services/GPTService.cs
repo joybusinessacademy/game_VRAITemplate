@@ -61,11 +61,11 @@ public class GPTService : AbstractService<GPTService>
            });
     }
 
-    public static void ThreadRun(string threadId, string assistantId, System.Action<string> onComplete)
+    public static void ThreadRun(string threadId, string assistantId, string @instructions = null, Action<string> onComplete = null)
     {
 
         APIService.POST(string.Format("https://api.openai.com/v1/threads/{0}/runs", threadId), BaseAssistantRequest.header,
-           new AssistantThreadRunRequest() { assistant_id = assistantId },
+           new AssistantThreadRunRequest() { assistant_id = assistantId, instructions = @instructions },
            (response) =>
            {
                //Debug.Log("ThreadRun " + response.downloadHandler.text);
@@ -238,7 +238,9 @@ public class GPTService : AbstractService<GPTService>
     [System.Serializable]
     protected class AssistantThreadRunRequest : BaseAssistantRequest
     {
-        public string assistant_id;
+        public string assistant_id; 
+        public string instructions = null;
+        public string model = "gpt-4o";
     }
 
     [System.Serializable]

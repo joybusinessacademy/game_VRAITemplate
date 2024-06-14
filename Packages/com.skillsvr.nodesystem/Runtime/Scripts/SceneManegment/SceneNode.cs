@@ -42,8 +42,6 @@ namespace SkillsVRNodes.Scripts.Nodes
 		public static string activeLightingScene = "";
 
 		public string templateId;
-		public string npcId;
-		
 
 		public string assistantId;
 		public string assistantInstruction;
