@@ -27,7 +27,7 @@ public class GPTService : AbstractService<GPTService>
 
     public static void CreateAssistant(string @instructions, string vectorStoreId, System.Action<string> onComplete)
     {
-        var vectorStore = vectorStoreId == "None" ? 
+        var vectorStore = vectorStoreId == "NULL_ID" ? 
             new ToolResources.VectorStoreBody() :
             new ToolResources.VectorStoreBody() { vector_store_ids = new List<string>{ vectorStoreId } };
         APIService.POST("https://api.openai.com/v1/assistants", BaseAssistantRequest.header,

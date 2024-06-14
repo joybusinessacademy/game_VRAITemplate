@@ -145,6 +145,7 @@ namespace SkillsVRNodes.Editor.NodeViews
 				npcs.choices.Add("Dru (Male)");
 				npcs.choices.Add("Elle (Female)");
 				npcs.value = string.IsNullOrEmpty((sceneGraph as SceneGraph).npcId) ? "Dru (Male)" : (sceneGraph as SceneGraph).npcId;
+				(sceneGraph as SceneGraph).npcId = npcs.value;
 				npcs.RegisterCallback<ChangeEvent<string>>(evt =>
 				{
 					(sceneGraph as SceneGraph).npcId = evt.newValue;
@@ -284,8 +285,13 @@ namespace SkillsVRNodes.Editor.NodeViews
 						nodes[i].position.position = nodes[i - 1].position.position + new Vector2(nodes[i-1].Width + 100, 0);
 
 					ElevenLabsService.voiceId = (sceneGraph as SceneGraph).npcId.Equals("Dru (Male)") ? "ZY37LYw0WtCyedeNw2EV" : "XfNU2rGpBa01ckF309OY";
-					
-					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience(vectorIdMapping.ToList().Find(k => k.Value.Equals(dropdownFiles.text)).Key));
+
+					var pair = vectorIdMapping.ToList().Find(k => k.Value.Equals(dropdownFiles.text));
+					string vectorStore = "NULL_ID";
+					if (pair.Key != null)
+						vectorStore = pair.Key;
+
+					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience(vectorStore));
 
 					// open scene
 					// generate npc after

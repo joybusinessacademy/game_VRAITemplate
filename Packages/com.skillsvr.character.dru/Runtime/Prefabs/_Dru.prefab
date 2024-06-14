@@ -7687,7 +7687,7 @@ MonoBehaviour:
         textures: []
         materialRenderer: {fileID: 0}
         materials: []
-      inspFoldout: 1
+      inspFoldout: 0
       previewDisplayMode: 0
       collectionExpand: 0
     isRandomEmote: 0
@@ -11077,11 +11077,11 @@ MonoBehaviour:
         textures: []
         materialRenderer: {fileID: 0}
         materials: []
-      inspFoldout: 0
+      inspFoldout: 1
       previewDisplayMode: 0
       collectionExpand: 0
     isRandomEmote: 0
-    isLipsyncEmphasisEmote: 1
+    isLipsyncEmphasisEmote: 0
     isRepeaterEmote: 0
     repeaterDelay: 0
     startDelay: 0
@@ -11104,7 +11104,7 @@ MonoBehaviour:
   randomHoldDurationMax: 0.5
   configReady: 1
   warnOnNullRefs: 1
-  inspSalsaLinked: 0
+  inspSalsaLinked: 1
   inspStateFoldoutProcessing: 0
   inspStateFoldoutSettings: 0
   inspStateFoldoutEmotes: 1
