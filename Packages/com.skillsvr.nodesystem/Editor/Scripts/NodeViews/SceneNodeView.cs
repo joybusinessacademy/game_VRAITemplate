@@ -175,6 +175,7 @@ namespace SkillsVRNodes.Editor.NodeViews
 					AttachedNode.vectorStoreId = "NULL_ID";
 				dropdownFiles.value = vectorIdMapping[AttachedNode.vectorStoreId];
 
+
 				if (vectorIdMapping != null)
 				{
 					vectorIdMapping.ToList().ForEach(k =>
@@ -200,11 +201,12 @@ namespace SkillsVRNodes.Editor.NodeViews
 								var id = JObject.Parse(r2)["id"].ToString();
 								var name = JObject.Parse(r2)["name"].ToString();
 
-								if (!vectorIdMapping.ContainsKey(name))
-									vectorIdMapping[name] = "";
+								if (!vectorIdMapping.ContainsKey(id))
+									vectorIdMapping[id] = "";
 
 								dropdownFiles.choices.Add(name);
 								dropdownFiles.value = name;
+								vectorIdMapping[id] = name;
 
 							},  JObject.Parse(response)["id"].ToString());
 
@@ -282,7 +284,8 @@ namespace SkillsVRNodes.Editor.NodeViews
 						nodes[i].position.position = nodes[i - 1].position.position + new Vector2(nodes[i-1].Width + 100, 0);
 
 					ElevenLabsService.voiceId = (sceneGraph as SceneGraph).npcId.Equals("Dru (Male)") ? "ZY37LYw0WtCyedeNw2EV" : "XfNU2rGpBa01ckF309OY";
-					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience(dropdownFiles.text));
+					
+					EditorCoroutineUtility.StartCoroutineOwnerless(CreateExperience(vectorIdMapping.ToList().Find(k => k.Value.Equals(dropdownFiles.text)).Key));
 
 					// open scene
 					// generate npc after
