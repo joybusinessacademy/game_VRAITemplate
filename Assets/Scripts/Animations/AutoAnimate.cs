@@ -48,11 +48,16 @@ public class AutoAnimate : MonoBehaviour
             var currentClipInfo = animator.GetCurrentAnimatorClipInfo(1);
             var clipLenghth = currentClipInfo[0].clip.length;
 
-            polledAnimation += clipLenghth;
+            float randomGap = Random.Range(0.5f, 2f);
+            polledAnimation += clipLenghth + randomGap;
 
             if (polledAnimation > clip.length)
                 break;
+
             yield return new WaitForSeconds(clipLenghth * .85f);
+
+            yield return new WaitForSeconds(randomGap);
+
         }
 
         currentClipName = string.Empty;

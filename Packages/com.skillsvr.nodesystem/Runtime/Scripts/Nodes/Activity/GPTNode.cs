@@ -62,8 +62,8 @@ namespace SkillsVRNodes.Scripts.Nodes
 			{
 				sceneAudio.PlayAudio(targetClip);
 			}
-			
-			DateTime startTime = DateTime.Now;
+
+			var fillerEndTime = Time.time + targetClip.length;
 
 			string threadId = graphThreadIdPair[Graph];
 			string assistantId = (graph as SceneGraph).assistantId;
@@ -105,10 +105,8 @@ namespace SkillsVRNodes.Scripts.Nodes
 				queue.text = text;
 				queue.onComplete = (response) => {
 
-					DateTime endTime = DateTime.Now;
-					TimeSpan elapsed = endTime - startTime;
+					float delta = Math.Max(0, (fillerEndTime - Time.time));
 
-					var delta = Math.Max(0, elapsed.TotalSeconds - targetClip.length);
 					WaitMonoBehaviour.Process((float)delta, () =>
 					{
 						AudioClip myClip = DownloadHandlerAudioClip.GetContent(response);
