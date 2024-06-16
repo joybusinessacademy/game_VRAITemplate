@@ -1315,6 +1315,7 @@ GameObject:
   - component: {fileID: 7318825412428874641}
   - component: {fileID: 4798557942179272869}
   - component: {fileID: 2397972966869688391}
+  - component: {fileID: 2026716593092993233}
   m_Layer: 0
   m_Name: _Dru
   m_TagString: Untagged
@@ -1345,7 +1346,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7293204913948816011
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1362,7 +1363,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &5618507892208028271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12053,6 +12054,23 @@ MonoBehaviour:
       collectionExpand: 0
     gizmo: {fileID: 0}
     referenceIdx: 1
+--- !u!114 &2026716593092993233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079512780422574667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac9f2fd67ed71040a657bdb5b794882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animations:
+  - Standing_Neutral_ApprehensiveGesture_02
+  - Standing_Neutral_DeepHeadTilt_02
+  - Standing_Neutral_RightHandOut_02
+  currentClipName: 
 --- !u!1 &4126365489781007907
 GameObject:
   m_ObjectHideFlags: 0

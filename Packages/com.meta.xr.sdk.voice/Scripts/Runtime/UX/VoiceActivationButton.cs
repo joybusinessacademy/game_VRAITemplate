@@ -20,6 +20,7 @@
 
 using Meta.WitAi;
 using Meta.WitAi.Requests;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -149,13 +150,23 @@ namespace Oculus.VoiceSDK.UX
         {
 
             jRecording = false;
-            Debug.Log(collectedString);
 
-            Deactivate();
-            
-            onComplete.Invoke(collectedString);
+            StartCoroutine(WaitForSecond(1, () =>
+             {
+                 Debug.Log(collectedString);
 
-            strings.Clear();
+                 Deactivate();
+
+                 onComplete.Invoke(collectedString);
+
+                 strings.Clear();
+             }));
+        }
+
+        private IEnumerator WaitForSecond(float wait, System.Action action)
+        {
+            yield return new WaitForSeconds(wait);
+            action.Invoke();
         }
 
         // Get events
@@ -196,7 +207,7 @@ namespace Oculus.VoiceSDK.UX
             }
         }
 
-        private const int maxWords = 50;
+        private const int maxWords = 12;
 
         private void FixedUpdate()
         {

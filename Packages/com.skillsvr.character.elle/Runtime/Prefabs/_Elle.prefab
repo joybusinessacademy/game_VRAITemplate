@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 6506683182326836748}
   - component: {fileID: 156346205412594095}
   - component: {fileID: 1937444303423265546}
+  - component: {fileID: -8863288359099324978}
   m_Layer: 0
   m_Name: _Elle
   m_TagString: Untagged
@@ -175,7 +176,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6253696715376240979
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -192,7 +193,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &6885210348491991014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10883,6 +10884,23 @@ MonoBehaviour:
       collectionExpand: 0
     gizmo: {fileID: 0}
     referenceIdx: 1
+--- !u!114 &-8863288359099324978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820328580550142355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac9f2fd67ed71040a657bdb5b794882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animations:
+  - Standing_Neutral_ApprehensiveGesture_02
+  - Standing_Neutral_DeepHeadTilt_02
+  - Standing_Neutral_RightHandOut_02
+  currentClipName: 
 --- !u!1 &951954433243584066
 GameObject:
   m_ObjectHideFlags: 0

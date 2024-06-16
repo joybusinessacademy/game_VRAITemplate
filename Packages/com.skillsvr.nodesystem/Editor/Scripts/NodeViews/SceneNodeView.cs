@@ -375,29 +375,29 @@ namespace SkillsVRNodes.Editor.NodeViews
 
 
 			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (2/6)...", 0.4f);
-			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 4 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
 					(response) => {
 						clips.Add(response);
 					}));
 
 			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (3/6)...", 0.5f);
-			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 4 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
 					(response) => {
 						clips.Add(response);
 					}));
 
 			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (4/6)...", 0.6f);
-			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 4 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
 					(response) => {
 						clips.Add(response);
 					}));
 			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (5/6)...", 0.7f);
-			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 4 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
 					(response) => {
 						clips.Add(response);
 					}));
 			EditorUtility.DisplayProgressBar($"Generating", "Creating voice-overs (6/6)...", 0.8f);
-			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 2 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
+			yield return EditorCoroutineUtility.StartCoroutineOwnerless(AddMessageAndCreateClip(threadId, "give me 1example of filler responses atleast 4 sentences that is generic when responding to a conversation it should not be a question, you will respond with just the example nothing else.",
 					(response) => {
 						clips.Add(response);
 					}));
