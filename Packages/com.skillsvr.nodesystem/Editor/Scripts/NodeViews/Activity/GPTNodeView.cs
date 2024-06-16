@@ -10,15 +10,19 @@ namespace SkillsVRNodes.Editor.NodeViews
 	public class GPTNodeView : BaseNodeView
 	{
 		private GPTNode AttachedNode => AttachedNode<GPTNode>();
-
+		
 		public override VisualElement GetInspectorVisualElement()
 		{
+
 			VisualElement visualElement = new VisualElement();
 			visualElement.Add(new PropDropdown<IPropAudioSource>("Character: ", AttachedNode.dialoguePosition,
 			elementName => AttachedNode.dialoguePosition = elementName, false));
 
+			visualElement.Add(AttachedNode.CustomToggle(nameof(AttachedNode.loop), "Loop Node"));
+
 			return visualElement;
 		}
+		
 	}
 
 

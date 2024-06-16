@@ -33,6 +33,7 @@ namespace SkillsVRNodes.Scripts.Nodes
 		private static Dictionary<BaseGraph, string> graphThreadIdPair = new Dictionary<BaseGraph, string>();
 
 		public List<LocalizedDialog> fillerDialogs = new List<LocalizedDialog>();
+		public bool loop = true;
 
 
 		protected override void OnStart()
@@ -56,14 +57,19 @@ namespace SkillsVRNodes.Scripts.Nodes
 
 		private IEnumerator RunGPT(string text)
 		{
-			var targetClip = fillerDialogs[(int)UnityEngine.Random.Range(0, fillerDialogs.Count)].GetAudioClip;
+			AudioClip targetClip = null;
 			var sceneAudio = PropManager.GetProp<IPropAudioSource>(dialoguePosition);
-			if (sceneAudio != null)
+			if (fillerDialogs.Count > 0)
 			{
-				sceneAudio.PlayAudio(targetClip);
+				targetClip = fillerDialogs[(int)UnityEngine.Random.Range(0, fillerDialogs.Count)].GetAudioClip;
+				
+				if (sceneAudio != null)
+				{
+					sceneAudio.PlayAudio(targetClip);
+				}
 			}
 
-			var fillerEndTime = Time.time + targetClip.length;
+			var fillerEndTime = targetClip == null ? 0 : Time.time + targetClip.length;
 
 			string threadId = graphThreadIdPair[Graph];
 			string assistantId = (graph as SceneGraph).assistantId;
@@ -115,8 +121,13 @@ namespace SkillsVRNodes.Scripts.Nodes
 
 						WaitMonoBehaviour.Process(myClip.length + 0.5f, () =>
 						{
-							gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).enabled = true;
-							gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).interactable = true;
+							if (!loop)
+								RunLink("Complete", false);
+							else
+							{
+								gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).enabled = true;
+								gptInstance.GetComponentsInChildren<CanvasGroup>().ToList().Find(k => k.name.Equals("Canvas")).interactable = true;
+							}
 						});
 					});					
 				};
