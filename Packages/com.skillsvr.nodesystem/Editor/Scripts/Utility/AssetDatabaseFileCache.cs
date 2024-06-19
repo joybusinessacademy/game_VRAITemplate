@@ -6,6 +6,8 @@ using Scripts.Utility;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using Unity.EditorCoroutines.Editor;
+using System.Collections;
 
 public class AssetDatabaseAdder : AssetPostprocessor
 {
@@ -108,17 +110,28 @@ public static class AssetDatabaseFileCache
     [MenuItem("Tools/Asset Database File Cache/Reset All Cache")]
     public static void PreCache()
     {
+        EditorCoroutineUtility.StartCoroutineOwnerless(WaitForEditor());
+    }
+
+    static IEnumerator WaitForEditor()
+    {
+        yield return new WaitUntil(() => EditorApplication.isUpdating == false && EditorApplication.isCompiling == false);
+        CacheNow();
+    }
+
+    public static void CacheNow()
+    {
         AllAssetReferences.Clear();
         ProjectAssetReferences.Clear();
-        
+
         ValidateCache<Texture2D>();
         ValidateCache<AudioClip>();
         ValidateCache<Sprite>();
         ValidateCache<Animation>();
+        ValidateCache<GameObject>();
 
         OnDatabaseChanged?.Invoke();
     }
-
     /// <summary>
     /// Done When Switching Projects
     /// </summary>
@@ -277,6 +290,8 @@ public static class AssetDatabaseFileCache
         ProjectAssetReferences.Add(type, new List<ObjectReference>());
 
         string[] guidList = AssetDatabase.FindAssets($"t:{type.Name}");
+        Debug.Log($"t:{type.Name}");
+            
 
         foreach (string guid in guidList)
         {
